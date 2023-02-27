@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+   <style>
+    input[type=text]
+    {
+        width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+    }
+    input[type=password]
+    {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+   </style>
+</head>
+<body>
+       
+     <form action="My-Website.html" method="get">
+
+
+            Name: <input type="text" placeholder="Enter Name" required pattern="[a-zA-Z]{2,7}" title="Only Letters" > <br><br>
+            Password: <input type="password" placeholder="Enter Password" required pattern="[a-zA-z0-9]+" title="* letters only"> <br><br>
+            Mobile: <input type="text" placeholder="Enter Mobile Number" required pattern="[0-9]{10}" title="10 Digits Only"> <br><br>
+            Gender : <input type="radio" name="z" required>Male
+            <input type="radio" name="z" required>Female
+            <input type="radio" name="z" required>LGBTQ <br><br>
+            Address: <textarea cols="30" rows="3" placeholder="Enter Address" required></textarea> <br><br>
+            Date: <input type="date" required> <br><br>
+            Datetime: <input type="datetime-local" required> <br><br>
+            Color: <input type="color"> <br><br>
+            File: <input type="file"> <br><br>
+            Email: <input type="email" required placeholder="Enter Email"> <br><br>
+            Country: <select>
+                <option hidden>---Select the Country---</option>
+                <option >India</option>
+                <option>USA</option>
+                <option>UAE</option>
+                <option>Canada</option>
+                </select> <br><br> 
+                <input type="checkbox" required>Read the Terms and Condition  <br><br>
+                <input type="submit" value="submit"> <br><br>
+                <input type="reset" value="Login">
+                <!-- <button type="submit" value="submiy" disabled>Submit</button> -->
+            </form>
+   
+</body>
+</html>
