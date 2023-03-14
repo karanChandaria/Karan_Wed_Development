@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        h1{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .main{
+            height: 600px;
+            width: 300px;
+            background-color: white;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 15px;
+        }
+        input[type=text],[type=password]{
+            width: 80%;
+            padding: 12px 20px;
+            margin: -8px 26px;
+            display: inline-block;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 1.5px solid grey ;
+        }
+        username{
+            text-align: center;
+        }
+        h5{
+            margin-left: 181px;
+            
+            /* text-align: right; */
+            color: gray;
+        }
+        h4{
+            margin-left: 25px;
+        }
+        input[type=button]
+        {
+            width: 80%;
+            padding: 12px 20px;
+            margin: -8px 26px;
+            display: inline-block;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 1.5px solid grey ;
+            border-radius: 30px;
+            background: linear-gradient(to right,rgba(22,197,224,255),rgba(231,20,254,255));  
+        }
+        body{
+            /* background: linear-gradient(rgb(252, 173, 3)); */
+             background: linear-gradient(to right,rgba(4,216,220,255),rgba(242,8,253,255));
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            }
+           ul{
+            list-style-type: none;
+            margin-left: 60px;
+            
+           }
+           li{
+            display: inline;
+           }
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <form action="test1.html" method="post">
+            <br>
+            <h1>Login</h1> <br><br>
+            <h4>Username</h4>
+            <input type="text" required placeholder="Type your Username" pattern="[a-zA-Z]{2,7}" title="Letters Only">
+            <br><br>
+            <h4>Password</h4>
+            <input type="password" required placeholder="Type your Password" >
+                    <h5> <a href="https://www.google.com" style="text-decoration: none;">  Forget password? </a></h5>
+
+            <input type="button" value="LOGIN" >
+                <br><br><br>  
+                <h4 style="text-align: center;color: gray;">or <a href="https://www.youtude.com" style="text-decoration: none;"> Signup Using </a></h4>
+              <ul type="none">
+                <li> <a href="https://www.instagram.com" target="_blank"> <i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a> </li>
+                <li> <a href="https://www.twitter.com" target="_blank">  <i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                </li>
+                <li> <a href="https://www.google.com" target="_blank"> <i class="fa fa-google fa-2x" aria-hidden="true"></i> </a> </li>
+
+
+
+              </ul>
+
+
+
+        </form>
+
+
+
+
+
+
+    </div>
+
+</body>
+</html>

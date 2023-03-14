@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            margin-left: 50px;
+           
+            
+            /* background: linear-gradient(rgba(19,160,201,255),rgba(80,183,193,255)); */
+        }
+        body{
+            background: linear-gradient(rgba(19,160,201,255),rgba(80,183,193,255));
+            background-repeat: no-repeat;
+            
+        }
+        button{
+            background: linear-gradient(rgba(19,160,201,255),rgba(80,183,193,255));
+            height: 40px;
+            width: 105px;
+            border-radius: 10px;
+            border: 2px solid white;
+            color: white;   
+        }
+        input{
+            padding: 5px;
+        }
+        textarea{
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+    <h2 style="color: white;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Contact Form</h2>
+    <p style="color: white;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Please fill in your information and we'be sending your orderin no time.</p> <br><br><br>
+    <form action="task1.html" method="get">
+        <label for="Your Name" style="color: white;">Your Name</label> &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="text" required placeholder="First Name" pattern="[a-zA-Z]+" title="Letters Only" style="width: 15%;"> &nbsp; &nbsp;
+        <input type="text" required placeholder="Last Name" pattern="[a-zA-Z]+" title="Letters Only" style="width: 15%;"><br><br>
+        <label for="Your Email" style="color: white;">Your Email</label> &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="email" required placeholder="e.g. hello@gmail.com" style="width: 32%;"><br><br>
+            <label for="phone" style="color: white;">Phone*</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="text" required placeholder="###" pattern="[0-9]{10}" style="width: 10%;">
+        <input type="text" required placeholder="###" pattern="[0-9]{10}" style="width: 10%;">
+        <input type="text" required placeholder="###" pattern="[0-9]{10}" style="width: 10%;"><br><br>
+        <label for="Message Subject" style="color: white;">Message Subject*</label> &nbsp; &nbsp; 
+        <select style="width: 12%;">
+            <option hidden>Other</option>
+            <option>Engish</option>
+            <option >Science</option>
+            <option >Goa</option>
+
+        </select> <br><br>
+        <label for="Message" style="color: white;">Message*</label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <textarea cols="50" rows="5" style="width: 30%;"></textarea><br><br>
+        <label for="verfication" style="color: white;">Verification*</label>
+        <img src="data:image/png;base64,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" alt="" height="50px" width="100px">
+        
+        <hr><br>
+        <button type="submit">Submit Form</button>
+
+
+
+
+
+    </form>
+</div>
+</body>
+</html>
