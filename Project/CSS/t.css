@@ -1,0 +1,17 @@
+@media(max-width:500px)
+{
+header .logo
+{
+    width: 100%;
+    background-color: gray;
+}
+header .nav
+{
+    width: 100%;
+    /* display: block; */
+}
+header .btn
+{
+    width: 100%;
+}
+}
