@@ -1,0 +1,770 @@
+************Javascript****************
+
+1.What is JavaScript?
+
+Ans=JavaScript is a high-level, interpreted programming language that is primarily used for adding interactivity and dynamic 
+behavior to web pages. It is a core technology of the World Wide Web alongside HTML and CSS, enabling client-side scripting.
+
+JavaScript was initially developed by Brendan Eich at Netscape Communications in the mid-1990s. Since then, it has become
+ one of the most popular programming languages for web development due to its versatility and wide browser support.
+
+Here are some key features and uses of JavaScript:
+
+Client-Side Scripting: JavaScript is primarily used for client-side scripting, meaning it runs on the user's web browser rather 
+than the server. It allows developers to manipulate and interact with HTML elements, modify CSS styles, handle events, and 
+validate user inputs.
+
+Interactivity and Dynamic Content: JavaScript enables the creation of interactive web experiences by responding to user
+ actions and events. It can dynamically modify the content and behavior of a web page without requiring a page reload. 
+This includes tasks like form validation, image sliders, interactive maps, and more.
+
+DOM Manipulation: JavaScript provides powerful APIs to interact with the Document Object Model (DOM), which represents
+ the structure of an HTML document. It allows developers to access, modify, and manipulate DOM elements, such as adding
+ or removing elements, changing their styles, or updating their content.
+
+Web Application Development: JavaScript is widely used for building web applications. With frameworks and libraries like 
+React, Angular, and Vue.js, developers can build complex and responsive web applications with ease. JavaScript also 
+supports AJAX (Asynchronous JavaScript and XML) for making asynchronous requests to the server, enabling dynamic
+ updates without page reloads.
+
+Server-Side Development: While JavaScript is primarily known for its client-side capabilities, it has also expanded into
+ server-side development. With the introduction of Node.js, JavaScript can now be used as a server-side language,
+ allowing developers to build scalable and efficient network applications.
+
+APIs and Third-Party Integration: JavaScript integrates with various APIs and services, enabling developers to interact
+ with external resources, such as social media platforms, maps, payment gateways, and more. It facilitates communication
+ and data exchange between web applications and external services.
+
+JavaScript has a rich ecosystem with a vast number of libraries, frameworks, and tools that enhance development
+ productivity and enable developers to build complex web applications efficiently. It continues to evolve and remains a
+ crucial technology for web development.
+
+
+
+2.What is the use of isNaN function?
+
+Ans=The isNaN() function in JavaScript is used to determine whether a value is NaN (Not-a-Number). It checks if the given
+ value is not a valid number and returns a boolean value indicating the result.
+
+Here's the syntax of the isNaN() function:
+
+javascript
+Copy code
+isNaN(value)
+The value parameter represents the value that needs to be checked. It can be of any data type, but typically it is used 
+with numeric values.
+
+The isNaN() function performs the following operations:
+
+If the value is not of the Number data type, it is implicitly converted to a Number. If the conversion results in a NaN value,
+ the isNaN() function returns true.
+If the value is already of the Number data type and its value is NaN, the isNaN() function returns true.
+If the value is a numeric value, not NaN, the isNaN() function returns false.
+Here are a few examples to illustrate the usage of the isNaN() function:
+
+javascript
+Copy code
+isNaN(123);       // false, 123 is a number
+isNaN('Hello');   // true, 'Hello' cannot be converted to a number
+isNaN(NaN);       // true, NaN is not a number
+isNaN('123');     // false, '123' can be converted to the number 123
+isNaN(true);      // false, true can be converted to the number 1
+The isNaN() function is useful when you need to validate if a value is a valid number or not before performing
+ mathematical operations or when you want to handle cases where the input may result in a NaN value.
+
+It's important to note that the isNaN() function has a potential drawback. It coerces non-numeric values to 
+numbers before checking for NaN. As a result, some unexpected conversions may occur. To mitigate this, 
+you can use the Number.isNaN() method introduced in ECMAScript 2015 (ES6) for more accurate NaN checking,
+ as it does not perform type coercion.
+
+
+
+
+3.What is negative Infinity?
+
+Ans=In JavaScript, negative infinity is a special value that represents a number that is lower than any other number. 
+It is denoted by the constant Number.NEGATIVE_INFINITY.
+
+Negative infinity is typically used to indicate a value that is beyond the lower limit of a numeric range or to represent the
+ result of a mathematical operation that exceeds the maximum representable value.
+
+Here are some important points to note about negative infinity:
+
+Value: Negative infinity is a numeric value that represents negative infinity. It is a special value distinct from regular
+ negative numbers.
+
+Comparison: Negative infinity is less than any other number, including negative numbers. For example, -Infinity < -100 is true.
+
+Arithmetic Operations: When negative infinity is involved in arithmetic operations, the result is always negative infinity. 
+For example, (-Infinity) + 10 and (-Infinity) * 5 both evaluate to -Infinity.
+
+Range Comparison: Negative infinity is typically used to compare against a value to check if it falls within a specific range.
+ For example, if you want to check if a variable x is less than or equal to negative 100, you can use x <= -100 or x > -Infinity as a comparison.
+
+Here's an example that demonstrates the usage of negative infinity in JavaScript:
+
+javascript
+Copy code
+console.log(Number.NEGATIVE_INFINITY);    // Output: -Infinity
+
+console.log(-Infinity < 0);                // Output: true
+console.log(-Infinity < -100);             // Output: true
+
+console.log(-Infinity + 10);               // Output: -Infinity
+console.log(-Infinity * 5);                // Output: -Infinity
+
+var x = -200;
+console.log(x > -Infinity);                // Output: true
+console.log(x <= -100);                    // Output: true
+
+
+
+4.Which company developed JavaScript?
+
+Ans=JavaScript was developed by Brendan Eich while he was working at Netscape Communications Corporation. It was initially
+ created in 1995 as a scripting language for the Netscape Navigator web browser. The language was originally called "Mocha"
+ and later "LiveScript" before settling on the name "JavaScript" to capitalize on the popularity of Java at the time. Netscape released
+ the first version of JavaScript in collaboration with Sun Microsystems.
+
+Since its creation, JavaScript has evolved and gained widespread adoption as a versatile programming language for web development.
+ It is now supported by all major web browsers and has become an essential part of modern web development. JavaScript is also 
+standardized through the ECMAScript specification, which is maintained by the Ecma International standards organization.
+
+
+5.What are undeclared and undefined variables?
+
+Ans=Undeclared and undefined variables are terms used in JavaScript to describe different states of variables.
+
+Undeclared Variables:
+Undeclared variables are those that have not been declared or defined within the current scope. When you
+ attempt to use an undeclared variable, JavaScript will throw a reference error, indicating that the variable is 
+not defined.
+
+Example of using an undeclared variable:
+
+javascript
+Copy code
+console.log(undeclaredVariable); // ReferenceError: undeclaredVariable is not defined
+In the above example, undeclaredVariable is used without prior declaration, resulting in a reference error.
+
+Undefined Variables:
+Undefined variables are variables that have been declared but have not been assigned a value. When you 
+access an undefined variable, its value will be undefined. In JavaScript, undefined is a primitive value that 
+represents the absence of a value.
+
+Example of using an undefined variable:
+
+javascript
+Copy code
+let undefinedVariable;
+console.log(undefinedVariable); // Output: undefined
+In the above example, undefinedVariable is declared but not assigned a value. When you log its value, 
+t will be undefined.
+
+It's important to note that undefined is also the default value of function parameters that are not passed 
+an argument.
+
+javascript
+Copy code
+function greet(name) {
+  console.log('Hello, ' + name);
+}
+
+greet(); // Output: Hello, undefined
+
+
+
+
+6.Write the code for adding new elements dynamically?
+
+Ans=
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Elements Dynamically</title>
+  </head>
+  <body>
+    <button id="addButton">Add Element</button>
+    <ul id="list"></ul>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+// Get the button and the list element
+const addButton = document.getElementById('addButton');
+const list = document.getElementById('list');
+
+// Counter to track the number of elements
+let counter = 1;
+
+// Function to add a new list item
+function addListItem() {
+  // Create a new list item
+  const listItem = document.createElement('li');
+  listItem.textContent = 'Item ' + counter;
+
+  // Append the new list item to the list
+  list.appendChild(listItem);
+
+  // Increment the counter
+  counter++;
+}
+
+// Add an event listener to the button
+addButton.addEventListener('click', addListItem);
+
+
+
+7. What is the difference between ViewState and SessionState?
+
+Ans=ViewState and SessionState are two different concepts related to web application development, specifically in the context 
+of ASP.NET. Here's the difference between them:
+
+ViewState:
+ViewState is a mechanism in ASP.NET used to maintain the state of controls on a web page between postbacks. It is a hidden
+ field that stores the state of controls and their values. ViewState is specific to an individual page and is used to track changes
+ made to controls on that page. It helps in maintaining the state of controls across postbacks, enabling the preservation of user
+ input and control values.
+
+ViewState is stored on the client-side as a hidden field, usually in the HTML markup. It is encrypted and sent back to the server 
+on each postback, allowing the server to reconstruct the page's state and process the user's interactions correctly. ViewState 
+data is tied to the page and is not accessible from other pages or across different sessions.
+
+ViewState is useful for maintaining the state of controls within a single page and simplifying the development of stateful web 
+applications. However, it can increase the size of the page, leading to larger page payloads and potentially impacting performance.
+
+SessionState:
+SessionState, on the other hand, is a mechanism in ASP.NET that allows storing and accessing user-specific data across 
+multiple pages and multiple requests within a session. A session represents a unique user session on the server and can 
+persist data across multiple page visits or interactions.
+
+SessionState is stored on the server-side and is associated with a unique session identifier (usually stored in a cookie or 
+appended to URLs) to maintain the state for a particular user. It provides a way to store user-specific data, such as user
+ preferences, shopping cart items, authentication tokens, and other relevant information.
+
+
+
+8.What is === operator?
+
+Ans= The === operator, also known as the strict equality operator, is a comparison operator in JavaScript. It is used to 
+compare two values for equality without performing any type coercion. It checks both the value and the type of the 
+operands being compared.
+
+Here are some key points to understand about the === operator:
+
+Comparison: The === operator compares two values and returns true if they are strictly equal, meaning they have the 
+same value and the same type. If the values are not strictly equal, it returns false.
+
+Value and Type: The === operator compares both the value and the type of the operands. It does not perform
+ implicit type conversion or coercion.
+
+Strict Equality: Unlike the loose equality operator ==, which performs type coercion, the === operator enforces 
+strict equality. It is generally recommended to use === for equality checks to avoid unexpected type coercion.
+
+
+
+9.How can the style/class of an element be changed?
+
+Ans= // Get the element by its ID or any other selector
+const element = document.getElementById('myElement');
+
+// Change the background color
+element.style.backgroundColor = 'red';
+
+// Change the font size
+element.style.fontSize = '20px';
+
+// Change multiple styles at once using CSSText
+element.style.cssText = 'background-color: blue; color: white; font-weight: bold;';
+
+
+// Get the element by its ID or any other selector
+const element = document.getElementById('myElement');
+
+// Add a class
+element.className = 'newClass';
+
+// Add a class (when multiple classes already exist)
+element.className += ' anotherClass';
+
+// Remove a class
+element.className = element.className.replace('oldClass', '');
+
+// Replace a class
+element.className = element.className.replace('oldClass', 'newClass');
+
+
+
+10.How to read and write a file using JavaScript?
+
+Ans= In a web browser environment, JavaScript doesn't have direct access to the file system for security
+ reasons. However, you can perform file-related operations indirectly through web APIs such as the File
+ API, FileReader API, and the Fetch API. These APIs allow you to read and write files in the context of a 
+user interacting with a web application. Here's a basic overview of how you can read and write files using
+ JavaScript in a web environment:
+
+Reading a File:
+To read the contents of a file selected by the user, you can use the File API in combination with the FileReader
+ API. Here's an example:
+
+
+// Select the file input element
+const fileInput = document.getElementById('fileInput');
+
+// Add an event listener for when the user selects a file
+fileInput.addEventListener('change', (event) => {
+  const file = event.target.files[0]; // Get the selected file
+
+  // Create a new FileReader
+  const reader = new FileReader();
+
+  // Set up a callback function for when the file is loaded
+  reader.onload = (e) => {
+    const contents = e.target.result; // Get the file contents
+
+    // Process the file contents
+    console.log(contents);
+  };
+
+  // Read the file as text
+  reader.readAsText(file);
+});
+
+
+
+
+
+11.What are all the looping structures in JavaScript?
+
+Ans=JavaScript provides several looping structures that allow you to repeatedly execute a block of 
+code. The commonly used looping structures in JavaScript are:
+
+for loop:
+The for loop is a versatile loop that executes a block of code a specified number of times. It consists
+ of an initialization, a condition, an iterator, and a loop body.
+
+javascript
+Copy code
+for (initialization; condition; iterator) {
+  // Code to be executed in each iteration
+}
+Example:
+
+javascript
+Copy code
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+while loop:
+The while loop executes a block of code as long as a specified condition is true. It checks the condition 
+before each iteration.
+
+javascript
+Copy code
+while (condition) {
+  // Code to be executed in each iteration
+}
+Example:
+
+javascript
+Copy code
+let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+do...while loop:
+The do...while loop is similar to the while loop, but it checks the condition after each iteration. This 
+ensures that the loop body is executed at least once, even if the condition is initially false.
+
+javascript
+Copy code
+do {
+  // Code to be executed in each iteration
+} while (condition);
+Example:
+
+javascript
+Copy code
+let i = 0;
+do {
+  console.log(i);
+  i++;
+} while (i < 5);
+for...in loop:
+The for...in loop is used to iterate over the properties of an object. It iterates over the enumerable
+ properties of an object, including inherited properties.
+
+javascript
+Copy code
+for (variable in object) {
+  // Code to be executed in each iteration
+}
+Example:
+
+javascript
+Copy code
+const person = { name: 'John', age: 30 };
+for (let key in person) {
+  console.log(key + ': ' + person[key]);
+}
+for...of loop:
+The for...of loop is used to iterate over iterable objects, such as arrays, strings, or collections. 
+It provides an easy way to loop through the values of an iterable.
+
+javascript
+Copy code
+for (variable of iterable) {
+  // Code to be executed in each iteration
+}
+Example:
+
+javascript
+Copy code
+const arr = [1, 2, 3];
+for (let num of arr) {
+  console.log(num);
+}
+
+
+
+
+
+12.How can you convert the string of any base to an integer in JavaScript?
+
+Ans= In JavaScript, you can convert a string of any base (binary, octal, hexadecimal, etc.) to an integer 
+using the parseInt() function. The parseInt() function parses a string and returns an integer based on the 
+provided radix (base). Here's how you can use parseInt() to convert a string of any base to an integer:
+
+
+const binaryString = '101010'; // Binary string
+const octalString = '72'; // Octal string
+const hexadecimalString = '2A'; // Hexadecimal string
+
+const binaryToInteger = parseInt(binaryString, 2); // Convert binary string to integer
+const octalToInteger = parseInt(octalString, 8); // Convert octal string to integer
+const hexadecimalToInteger = parseInt(hexadecimalString, 16); // Convert hexadecimal string to integer
+
+console.log(binaryToInteger); // Output: 42
+console.log(octalToInteger); // Output: 58
+console.log(hexadecimalToInteger); // Output: 42
+
+
+
+
+13.What is the function of the delete operator?
+
+Ans= The delete operator in JavaScript is used to delete a property from an object or to remove an element
+ from an array. Its function depends on the context in which it is used:
+
+Deleting Object Properties:
+When used with an object, the delete operator removes a specific property from the object.
+
+javascript
+Copy code
+const obj = { name: 'John', age: 30 };
+delete obj.age;
+console.log(obj); // Output: { name: 'John' }
+In the example above, the delete operator is used to remove the age property from the obj object. After the 
+deletion, the age property is no longer present in the object.
+
+It's important to note that the delete operator only removes own properties of an object, not inherited
+ properties.
+
+Removing Array Elements:
+When used with an array, the delete operator sets the value of the specified element to undefined, but
+ it does not remove the element from the array. The array length remains unchanged.
+
+javascript
+Copy code
+const arr = [1, 2, 3];
+delete arr[1];
+console.log(arr); // Output: [1, undefined, 3]
+In the example above, the delete operator is used to set the value of the element at index 1 to undefined.
+ The element is not actually removed from the array, but its value is replaced with undefined.
+
+To remove an element from an array and update the array length, you can use methods like splice() or 
+create a new array without the desired element.
+
+Deleting Variables:
+The delete operator cannot delete variables declared with var, let, or const. It can only delete properties 
+of objects or elements of arrays.
+
+javascript
+Copy code
+var x = 10;
+delete x;
+console.log(x); // Output: 10 (variable is not deleted)
+In the example above, the delete operator has no effect on the variable x. The variable remains intact,
+ and its value is unchanged.
+
+It's important to note that variables declared with let or const are block-scoped and cannot be deleted
+ using the delete operator.
+
+
+
+
+
+
+14. What are all the types of Pop up boxes available in JavaScript?
+
+Ans= user input. The commonly used pop-up boxes in JavaScript are:
+
+Alert:
+The alert() function displays a simple pop-up dialog box with a message and an OK button. 
+It is used to provide information or alert the user.
+
+javascript
+Copy code
+alert('This is an alert message.');
+Confirm:
+The confirm() function displays a pop-up dialog box with a message and two buttons: OK and
+ Cancel. It is used to ask the user for a confirmation and returns a boolean value indicating 
+the user's choice.
+
+javascript
+Copy code
+const result = confirm('Are you sure you want to proceed?');
+if (result) {
+  // User clicked OK
+} else {
+  // User clicked Cancel
+}
+Prompt:
+The prompt() function displays a pop-up dialog box with a message, an input field, and two 
+buttons: OK and Cancel. It is used to prompt the user for input and returns the value entered
+ by the user as a string.
+
+javascript
+Copy code
+const name = prompt('Please enter your name:');
+console.log('Hello, ' + name + '!');
+
+
+
+
+
+15.What is the use of Void (0)?
+
+
+Ans=In JavaScript, the void operator is used to evaluate an expression and return undefined. 
+When used with the value 0 (void (0)), it essentially discards the return value and prevents the
+ browser from navigating to a new page if the expression is used as an anchor (<a>) tag's href attribute.
+
+The primary use of void (0) is in conjunction with JavaScript event handlers or links to prevent 
+the default behavior of an anchor tag. By setting the href attribute of an anchor tag to javascript:void(0),
+ clicking on the link won't cause the browser to navigate to a new page or trigger a page refresh.
+ Instead, the click event can be handled programmatically.
+
+Here's an example of how void (0) is commonly used:
+
+html
+Copy code
+<a href="javascript:void(0);" onclick="myFunction()">Click me</a>
+In the example above, the href attribute of the anchor tag is set to javascript:void(0), which
+ ensures that clicking on the link does not trigger any navigation. The onclick attribute specifies
+ a JavaScript function myFunction() to be executed when the link is clicked.
+
+Using void (0) in this context allows you to define custom behavior for the click event without
+ causing any unintended navigation or page reloads.
+
+
+
+
+
+16.How can a page be forced to load another page in JavaScript?
+
+Ans=How can a page be forced to load another page in JavaScript?
+
+In JavaScript, you can use the window.location object to load a new page or redirect
+ the current page to a different URL. There are a few different ways to accomplish this:
+
+Directly assign a new URL to window.location.href:
+You can set the href property of window.location to a new URL, which will cause the
+ browser to load the new page.
+
+javascript
+Copy code
+window.location.href = "https://www.example.com";
+This method is commonly used for page redirection.
+
+Use the assign() method of window.location:
+The assign() method also allows you to load a new URL by providing it as an argument.
+
+javascript
+Copy code
+window.location.assign("https://www.example.com");
+This method is similar to directly assigning a new URL to window.location.href.
+
+Use the replace() method of window.location:
+The replace() method is similar to assign(), but it replaces the current page in the browser's 
+history with the new URL, so the user cannot navigate back to the original page using the browser's "Back" button.
+
+javascript
+Copy code
+window.location.replace("https://www.example.com");
+This method is commonly used when you want to redirect the user to a new page but prevent them from
+ going back to the previous page.
+
+Use the reload() method of window.location:
+If you want to reload the current page, you can use the reload() method without providing a 
+URL argument.
+
+javascript
+Copy code
+window.location.reload();
+This method will reload the current page, fetching the latest version from the server.
+
+
+
+
+
+17.What are the disadvantages of using innerHTML in JavaScript?
+
+Ans= While the innerHTML property in JavaScript is a convenient and commonly used way to manipulate 
+HTML content, it has a few potential disadvantages:
+
+Security risks:
+When using innerHTML to set HTML content, it is important to ensure that the inserted content is safe
+ and trusted. If you are using user-generated or untrusted content, setting it as innerHTML can expose
+ your application to cross-site scripting (XSS) attacks. Malicious scripts or code injected through user
+ input can be executed when the content is inserted using innerHTML. To mitigate this risk, it's crucial
+ to properly sanitize and validate any user-generated content before using innerHTML to insert it into 
+the DOM.
+
+Performance impact:
+The innerHTML property works by parsing the provided HTML string and rebuilding the entire content
+ of the target element. If you frequently use innerHTML to modify large portions of the HTML structure
+ or update content in a performance-critical scenario, it can lead to a noticeable impact on performance.
+ The browser needs to reparse and rebuild the entire DOM, which can be slower compared to more 
+targeted manipulation methods like using DOM methods (createElement, appendChild, etc.) or 
+manipulating specific DOM properties.
+
+Potential loss of event listeners and data:
+When you set the innerHTML property, the existing content within the target element is completely 
+replaced. This means that any event listeners attached to child elements or any associated data 
+stored in those elements can be lost. If you need to preserve event listeners or data, you will need
+ to reattach them after setting the innerHTML.
+
+Limited control over DOM structure:
+When using innerHTML, you provide a string of HTML content that gets parsed and inserted into the
+ DOM. However, this approach doesn't give you fine-grained control over the resulting DOM structure.
+ If you need to manipulate specific elements or modify the DOM in a more granular way, using DOM 
+methods allows you to have more control and flexibility.
+
+
+
+18.Create password field with show hide functionalities
+
+Ans= 
+
+HTML
+<div>
+  <input type="password" id="passwordField" placeholder="Enter password">
+  <button id="toggleButton">Show</button>
+</div>
+
+CSS
+#passwordField {
+  margin-bottom: 10px;
+}
+
+#toggleButton {
+  cursor: pointer;
+}
+
+Javascript
+const passwordField = document.getElementById('passwordField');
+const toggleButton = document.getElementById('toggleButton');
+
+toggleButton.addEventListener('click', function () {
+  if (passwordField.type === 'password') {
+    passwordField.type = 'text';
+    toggleButton.textContent = 'Hide';
+  } else {
+    passwordField.type = 'password';
+    toggleButton.textContent = 'Show';
+  }
+});
+
+
+
+
+
+19.Create basic math operation in JS
+
+Ans= 
+Javascript
+
+// Addition
+const additionResult = 5 + 3;
+console.log('Addition:', additionResult); // Output: 8
+
+// Subtraction
+const subtractionResult = 10 - 4;
+console.log('Subtraction:', subtractionResult); // Output: 6
+
+// Multiplication
+const multiplicationResult = 6 * 2;
+console.log('Multiplication:', multiplicationResult); // Output: 12
+
+// Division
+const divisionResult = 15 / 3;
+console.log('Division:', divisionResult); // Output: 5
+
+// Modulo (Remainder)
+const moduloResult = 10 % 3;
+console.log('Modulo:', moduloResult); // Output: 1
+
+// Exponentiation
+const exponentiationResult = 2 ** 3;
+console.log('Exponentiation:', exponentiationResult); // Output: 8
+
+
+
+
+20.Create a sliders using JavaScript
+
+Ans= 
+HTML
+<div class="slider-container">
+  <input type="range" id="slider" min="0" max="100" value="50">
+  <p id="sliderValue">50</p>
+</div>
+
+
+CSS
+.slider-container {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+#slider {
+  width: 100%;
+}
+
+#sliderValue {
+  text-align: center;
+}
+
+Javascript
+const slider = document.getElementById('slider');
+const sliderValue = document.getElementById('sliderValue');
+
+// Update the slider value display
+slider.addEventListener('input', function () {
+  sliderValue.textContent = slider.value;
+});
+
+// Perform an action when the slider is changed
+slider.addEventListener('change', function () {
+  const value = parseInt(slider.value);
+  // Perform desired action with the slider value
+  console.log('Slider value:', value);
+});
+
+
+
+
+
+
