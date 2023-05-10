@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+        body
+        {
+            margin: 0;
+            padding: 0;
+            background-color:#cad8ee ;
+        }
+        .main
+        {
+        height: 600px;
+        width: 310px;
+        background-color: #e5eefc;
+        margin: 100px;
+        margin-left: 550px;
+        border-radius:40px ;
+        position: relative;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        }
+        .left
+        {
+            height: 50px;
+            width: 50px;
+            background-color: #dde6f4;
+            position: absolute;
+            top: 3%;
+            left: 8%;
+            border-radius: 100px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+        }
+        .center
+        {   
+            height: 50px;
+            width: 120px;
+            background-color:  transparent;
+            color: #a6b4cd;
+            position: absolute;
+            top: 3%;
+            left: 30%;
+            text-align: center;
+            line-height: 50px;
+            
+            /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+
+        }
+        .right
+        {
+            height: 50px;
+            width: 50px;
+            background-color: #dde6f4;
+            position: absolute;
+            top: 3%;
+            left: 76%;
+            border-radius: 100px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+        }
+        .circle
+        {
+            height: 200px;
+            width: 200px;
+            background-color: orange;
+            border-radius: 100px;
+            position: absolute;
+            top: 15%;
+            left: 18%;
+            background: url(./art.jpeg);
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+        }
+        p
+        {
+            text-align: center;
+            color:#a6b4cd ;
+            line-height: 650px;
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+        .para1
+        {
+            text-align: center;
+            color: #a6b4cd;
+            position: absolute;
+            top: 2%;
+            left: 23%;
+  
+        }
+        i
+        {
+            position: absolute;
+            top: 70%;
+            left: 6%;
+            color: #a6b4cd;
+        }
+        input[type="range"]
+        {
+            width: 90%;
+            position: absolute;
+            top: 75%;
+            left: 4%;
+        }
+        .left1
+        {
+            width: 60px;
+            height: 60px;
+            background-color: #dde6f4;
+            border-radius: 100px;
+            position: absolute;
+            top: 85%;
+            left: 16%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+        }
+        .center1
+        {
+            height: 60px;
+            width: 60px;
+            background-color: #dde6f4;
+            border-radius: 100px;
+            position: absolute;
+            top: 85%;
+            left: 40%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+        }
+        .right1
+        {
+            height: 60px;
+            width: 60px;
+            background-color:#dde6f4;
+            border-radius: 100px;
+            position: absolute;
+            top: 85%;
+            left: 65%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+        }
+        .fa-angle-double-left
+        {
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            color: black;
+        }
+        .fa-pause
+        {
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            color: black;
+        }
+        .fa-angle-double-right
+        {
+            position: absolute;
+            top: 25%;
+            left: 35%;
+            color: #000;
+        }
+        .fa-arrow-left
+        {
+            position: absolute;
+            top: 15%;
+            left: 15%;
+            color: #000;
+        }
+        .fa-bars
+        {
+            position: absolute;
+            top: 15%;
+            left: 25%;
+            color: #000;
+        }
+
+        /* Comment */
+
+        .main2
+        {
+            height: 630px;
+            width: 310px;
+            background-color: #e4edfc;
+            margin-left: 900px;
+            margin-top: -650px;
+            border-radius: 40px;
+            position: relative;
+        }
+        .para2
+        {
+            font-size: 12px;
+            position: absolute;
+            top: -45%;
+            left:35%;
+        }
+        .left2
+        {
+            height: 40px;
+            width: 40px;
+            background-color: #dde6f3;
+            position: absolute;
+            border-radius: 100px;
+            top: 25%;
+            left: 8%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        .center2
+        {
+            height: 130px;
+            width: 130px;
+            background-color: orange transparent;
+            border-radius: 100px;
+            position: absolute;
+            top: 18%;
+            left: 28%;
+            background: url(./art.jpeg);
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        .right2
+        {
+            height: 40px;
+            width: 40px;
+            background-color: #dde6f3;
+            position: absolute;
+            border-radius: 100px;
+            top: 25%;
+            left: 77%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        .helix
+        {
+            position: absolute;
+            top: -5%;
+            left: 5%;
+            font-size: 14px;
+        }
+        .flume
+        {
+            position: absolute;
+            top: -2%;
+            left: 5%;
+            font-size: 12px;
+            color: #bac4d7;
+        }
+        .nblu
+        {
+            position: absolute;
+            top: 5%;
+            left: 4%;
+            font-size: 14px;
+        }
+        .flume-kai
+        {
+            position: absolute;
+            top: 8%;
+            left: 4%;
+            font-size: 12px;
+            color: #bac4d7;
+        }
+        .loose-it
+        {
+            position: absolute;
+            top: 14%;
+            left:4%;
+            font-size: 14px;
+
+        }
+        .vicmensa
+        {
+            position: absolute;
+            top: 17%;
+            left: 4%;
+            font-size: 12px;
+            color: #bac4d7;
+        }
+        .ngc
+        {
+            position: absolute;
+            top: 22%;
+            left: 4%;
+            font-size: 14px;
+        }
+        .kucka
+        {
+            position: absolute;
+            top: 25%;
+            left: 4%;
+            font-size: 12px;
+            color: #bac4d7;
+
+        }
+        .say-it
+        {
+            position: absolute;
+            top: 30%;
+            left: 4%;
+            font-size: 14px;
+        }
+        .tove-lo
+        {
+            position: absolute;
+            top: 33%;
+            left: 4%;
+            font-size: 13px;
+            color:#bac4d7;
+        }
+        .wallf
+        {
+            position: absolute;
+            top: 38%;
+            left: 4%;
+        }
+        .flu
+        {
+            position: absolute;
+            top: 41%;
+            left: 5%;
+            color: #bac4d7;
+        }
+        .div1
+        {
+            height: 40px;
+            width: 40px;
+            background-color: #dce5f3;
+            border-radius: 100px;
+            position: absolute;
+            top: 47%;
+            left: 80%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        .div2
+        {
+            height: 40px;
+            width: 40px;
+            background-color: #dce5f3;
+            border-radius: 100px;
+            position: absolute;
+            top: 56%;
+            left: 80%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        .div3
+        {
+            height: 40px;
+            width: 40px;
+            background-color: #7395ff;
+            border-radius: 100px;
+            position: absolute;
+            top: 65%;
+            left: 80%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        .div4
+        {
+            height: 40px;
+            width: 40px;
+            background-color: #dce5f3;
+            border-radius: 100px;
+            position: absolute;
+            top: 74%;
+            left: 80%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        .div5
+        {
+            height: 40px;
+            width: 40px;
+            background-color: #dce5f3;
+            border-radius: 100px;
+            position: absolute;
+            top: 83%;
+            left: 80%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        .div6
+        {
+            height: 40px;
+            width: 40px;
+            background-color: #dce5f3;
+            border-radius: 100px;
+            position: absolute;
+            top: 91%;
+            left: 80%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        .fa-heart
+        {
+            position: absolute;
+            top: 35%;
+            left: 30%;
+            color: #000;
+        }
+        .fa-ellipsis-h
+        {
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            color: #000;
+
+        }
+        .div1 .fa-play
+        {
+            position: absolute;
+            top: 30%;
+            left: 35%;
+            color: #000;
+        }
+        .div2 .fa-play
+        {
+            position: absolute;
+            top: 30%;
+            left: 35%;
+            color: #000;
+        }
+        .div3 .fa-play
+        {
+            position: absolute;
+            top: 30%;
+            left: 35%;
+            color: #000;
+        }
+        .div4 .fa-play
+        {
+            position: absolute;
+            top: 30%;
+            left: 35%;
+            color: #000;
+        }
+        .div5 .fa-play
+        {
+            position: absolute;
+            top: 30%;
+            left: 35%;
+            color: #000;
+        }
+        .div6 .fa-play
+        {
+            position: absolute;
+            top: 30%;
+            left: 35%;
+            color: #000;
+        }
+      
+        </style>
+</head>
+<body>
+            <!-- Half Task Done  -->
+
+    <div class="main">
+        <div class="left">
+            <i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i>
+
+        </div>
+        <div class="center">PLAYING NOW</div>
+        <div class="right">
+            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+
+        </div>
+        <div class="circle"></div>
+        <p>Lose it</p>
+        <p class="para1">Flume ft.Vice marsa</p>
+        <i>1:21 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3:46</i>
+        <input type="range">
+        <div class="left1">
+            <i class="fa fa-angle-double-left fa-2x" aria-hidden="true"></i>
+
+        </div>
+        <div class="center1">
+            <i class="fa fa-pause fa-2x" aria-hidden="true"></i>
+
+        </div>
+        <div class="right1">
+            <i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i>
+
+        </div>
+   </div>
+                <!-- Second Half Done   -->
+
+        <div class="main2">
+            <p class="para2">SKIN . FLUME</p>
+            <div class="left2">
+                <i class="fa fa-heart " aria-hidden="true"></i>
+
+            </div>
+            <div class="center2"></div>
+            <div class="right2">
+                <i class="fa fa-ellipsis-h fa-2x" aria-hidden="true"></i>
+
+            </div>
+            <p class="helix">Helix</p>
+           
+            <p class="flume">Flume</p>
+            
+            <p class="nblu">Never Be like you</p>
+            <p class="flume-kai">Flume-Kai</p>
+            <br>
+            <p class="loose-it">Lose it </p>
+            <p class="vicmensa">Flume . VicMensa</p>
+            <br><br>
+            <p class="ngc">Numb & Getting Colder</p>
+            <p class="kucka">Flume . KUCKA</p>
+            <br><br>
+            <p class="say-it">Say it</p>
+            <p class="tove-lo">Flume . Tove Lo</p>
+            <br>
+            <p class="wallf">Wall F*uck</p>
+            <p class="flu">Flume</p>
+
+            <div class="div1">
+                <i class="fa fa-play" aria-hidden="true"></i>
+
+            </div>
+            <div class="div2">
+                <i class="fa fa-play" aria-hidden="true"></i>
+
+            </div>
+            <div class="div3">
+                <i class="fa fa-play" aria-hidden="true"></i>
+
+
+            </div>
+            <div class="div4">
+                <i class="fa fa-play" aria-hidden="true"></i>
+
+            </div>
+            <div class="div5">
+                <i class="fa fa-play" aria-hidden="true"></i>
+
+            </div>
+            <div class="div6">
+                <i class="fa fa-play" aria-hidden="true"></i>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>   
+</body>
+</html>

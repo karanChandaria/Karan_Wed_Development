@@ -1,0 +1,336 @@
+@media (max-width:500px)
+{
+    .logo .part 
+    {
+        height: 100px;
+        width: 100%;
+    }
+    .logo .part img 
+    {
+        height: 20%;
+        width: 15%;
+        margin-top: 25px;
+        margin-left: 200px;
+    } 
+    .logo .part ul li 
+    {
+        display: block;
+        /* margin-right: 30px; */
+        position: relative;
+    } 
+    .logo .part ul 
+    {
+        margin-left: 200px;
+        margin-top: 25px;
+        line-height: 20px;
+    }
+    .x
+    {
+        height: 2px;
+        width: 0px;
+        background: #ffa200;
+        position: absolute;
+        top: 120%;
+        left: 10%;
+        right: 0%;
+        transition: 0.5s;
+    }
+    .fa-angle-down
+    {
+        margin-left: -200px;
+    }
+    .logo .part .orangediv
+    {
+        display: none;
+    }
+    .logo .part .call a
+    {
+        display: none;
+    } 
+    .logo .part .heart
+    {
+        display: none;
+    }
+    .logo .part .shopping
+    {
+        display: none;
+    }
+    .logo .part .icon .fa-user
+    {
+        display: none;
+    }
+    .logo .part .icon .fa-search
+    {
+        display: none;
+    }
+    .bigimg
+    {
+        height: 300px;
+        width: 100%;
+        margin-top: 60px;
+    }
+    .bigimg h3
+    {
+        position: absolute;
+        top: 40%;
+        left: 37%;
+        color: #B11200;
+        font-size: 7px;
+    }
+    .bigimg h2 
+    {
+        position: absolute;
+        top: 48%;
+        left: 36%;
+        font-size: 12px;
+    }
+    .bigimg button
+    {
+        position: absolute;
+        top: 60%;
+        left: 37%;
+        padding: 8px 22px;
+        background: #000;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+    }
+    .bigimg .updown 
+    {
+        height: 20px;
+        width: 20px;
+        /* background: gray; */
+        position: absolute;
+        top: 37.5%;
+        left: 62%;
+    }
+    .full .part 
+    {
+        height: 200px;
+        width: 100%;
+        /* background: green; */
+        /* border: 1px solid; */
+    }
+    .full .part p 
+    {
+        text-align: center;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .declicious .part
+    {
+        width: 100%;
+    } 
+    .declicious .part .get1
+    {
+        width: 100%;
+    }
+    .popular .four .part
+    {
+        height: 500px;
+        width: 100%;
+    } 
+    .popular .four .part .x2 .s 
+    {
+        height: 30px;
+        width: 30px;
+        /* background: green; */
+        border: 1px solid gray;
+        color: gray;
+        text-align: center;
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        font-size: 20px;
+        border-radius: 5px;
+        line-height: 25px;
+    }
+    .popular .four .part .x2 .m
+    {
+        height: 30px;
+        width: 30px;
+        /* background: green; */
+        border: 1px solid gray;
+        color: gray;
+        text-align: center;
+        position: absolute;
+        top: 30%;
+        left: 15%;
+        font-size: 20px;
+        border-radius: 5px;
+        line-height: 25px;
+    }.popular .four .part .x2 .l
+    {
+        height: 30px;
+        width: 30px;
+        /* background: green; */
+        border: 1px solid gray;
+        color: gray;
+        text-align: center;
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        font-size: 20px;
+        border-radius: 5px;
+        line-height: 25px;
+    }   .popular .four .part .x2 .heated
+    {
+        position: absolute;
+        top: 50%;
+        left: 4%;
+        font-size: 22px;
+        color: #000;
+    }
+    .chicken 
+    {
+        margin-top: 1800px;
+        height: 500px;
+        width: 100%;
+        background: orange;
+        position: relative;
+    }
+    .chicken .set 
+    {
+        height: 280px;
+        width: 400px;
+        /* background: lightsalmon; */
+        position: absolute;
+        top: 21.8%;
+        left: 12%;
+    }
+    .popular .header .top
+    {
+        text-align: center;
+        /* margin-left: 15px; */
+        /* line-height: 230px; */
+        font-size: 25px;
+    }
+    .popular .header .view 
+    {
+        position: absolute;
+        top: 70%;
+        right: 42%;
+        border-bottom: 1px solid #821E04;
+        font-size: 20px;
+    }
+    .popular .four .part .x2 .he1
+    {
+        position: absolute;
+        top: 36%;
+        left: 3%;
+        font-size: 22px;
+        color: #000;
+    }
+    .popular .four .part .x1 .perct
+    {
+        height: 20px;
+        width: 60px;
+        background: #ff2B00;
+        font-weight: 800;
+        text-align: center;
+        position: absolute;
+        top: 12%;
+        font-size: 12px;
+        padding: 0 10px;
+        line-height: 18px;
+        border-radius: 50px;
+        /* background: #25c848; */
+        color: #fff;
+        z-index: 2;
+    } 
+    .sandwitch 
+    {
+        margin-top: 1800px;
+        height: 500px;
+        background: green;
+        position: relative;
+    }
+    .noodles 
+    {
+        height: 1400px;
+        /* height: auto; */
+        background-color: green;
+        position: relative;
+    }
+    .noodles .footer 
+    {
+        height: 200px;
+        width: 300px;
+        /* border: 1px solid #fff; */
+        position: absolute;
+        top: 10%;
+        left: 10%;
+    }
+    .noodles .footer p 
+    {
+        font-size: 16px;
+        position: absolute;
+        top: 15%;
+        left: 0;
+        color: #fff;
+        /* margin-bottom: 20px; */
+    }
+    .noodles .footer .num
+    {
+        font-size: 30px;
+        font-weight: 700;
+        color: #ffa200;
+        position: absolute;
+        top: 30%;
+        /* margin-bottom: 20px; */
+    }
+    .noodles .footer1 
+    {
+        height: 200px;
+        width: 300px;
+        /* border: 1px solid #fff; */
+        position: absolute;
+        top: 32%;
+        left: 10%;
+    }
+    .noodles .footer2
+    {
+        height: 200px;
+        width: 300px;
+        /* border: 1px solid #fff; */
+        position: absolute;
+        top: 54%;
+        left: 10%;
+    }
+    .noodles .footer3
+    {   
+        height: 200px;
+        width: 300px;
+        /* border: 1px solid #fff;s */
+        position: absolute;
+        top: 76%;
+        left: 10%;
+    }
+    .noodles .Newsletter 
+    {
+        height: 100px;
+        width: 100%;
+        background: #ffa200;
+        border-radius: 10px;
+        position: absolute;
+        top: 95%;
+        left: 0%;
+    }
+    .noodles p 
+    {
+        position: absolute;
+        top: 106%;
+        left: 8%;
+        text-align: left;
+        font-size: 16px;
+        color: #ffffff;
+        color: #000;
+    }
+.noodles .card
+    {
+        position: absolute;
+        top: 112%;
+        left: 20%;
+    }
+
+}

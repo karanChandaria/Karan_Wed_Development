@@ -1,0 +1,130 @@
+@media (max-width:500px)
+{
+    .header
+    {
+        height: auto;
+        grid-template-columns: 1fr;
+    /* background-color: red; */
+
+    }
+    .logo
+    {
+        width: 100%;
+    }
+    .navlinks
+    {
+        width: 100%;
+    }
+    .navlinks ul li
+    {
+        width: 100%;
+        display: block;
+    }
+}
+@media (max-width:500px)
+{
+    .maindiv
+    {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .selects
+    {
+        display: grid;
+        grid-template-columns: 3fr;
+        background: none;
+        border-radius: 50px;
+        text-align: center;
+    }
+    .selects select{
+        margin: 15px auto;
+        border-radius: 30px;
+        background: white;
+    }
+    .deals .banners
+    {
+        grid-template-columns: 1fr;
+    }
+    .sec 
+    {
+        grid-template-columns: 1fr;
+    }
+    .ad
+    {
+        grid-template-columns: 1fr;
+    }
+    .ad img 
+    {
+        margin-left: 50px;
+    }
+    .growth
+    {
+        grid-template-columns: 1fr;
+    }
+    .growth .info .pic 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .love 
+    {
+        grid-template-columns: 1fr;
+    }
+    .main .love
+    {
+        grid-template-columns: 1fr;
+    }
+    .quality
+    {
+        grid-template-columns: 1fr;
+    }
+    .qualityinside .qualityinside1
+    {
+        grid-template-columns: 1fr;
+        
+    }
+    .qualityinside
+    {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height:auto;
+        background-color: blue;
+        width: 100%;
+    }
+    .exp .explore
+    {
+        grid-template-columns:1fr;
+        
+    }
+    .exp
+    {
+        margin-top: 800px;
+    }
+    .bestsellers .best
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }   
+    .bestsellers .best .spring .o
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .bestsellers .best .country .o
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .bestsellers .best .farm .o
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .bestsellers .best .panner .o
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}

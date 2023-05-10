@@ -1,0 +1,993 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+}
+header 
+{
+    height: auto;
+    /* background-color: orange; */
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    
+}
+header .logo
+{
+    height: 100px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .nav
+{
+    height: 100px;
+    width: 60%;
+    /* background-color: gray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .nav li
+{
+    display: inline;
+    margin-right: 25px;  
+}
+a
+{
+    text-decoration: none;
+    color: #5f88a3;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header .btn
+{
+    height: 100px;
+    width: 20%;
+    /* background-color: lightblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .btn button
+{
+    border: none;
+    color: #fff;
+    background-color: #f3223b;
+    padding: 12px 18px;
+    font-size: 17px;
+}
+section
+{
+    height: auto;
+    /* background-color: orange; */
+    display: flex;
+    flex-wrap: wrap;
+}
+section .info
+{
+    height: 450px;
+    width: 30%;
+    background-color: #1a5ca3;
+    text-align: center;
+}
+section .banner-img
+{
+    height: 450px;
+    width: 70%;
+    background-color: lightblue;
+}
+section .info button
+{
+    background-color: #1fb31a;
+    border: none;
+    color: #fff;
+    margin-top: 20px;
+    padding: 20px 95px;
+    font-size: 20px;
+    border-radius: 2px;
+    font-weight: bold;
+    box-shadow: 0 2px 2px 0 #024389, 0 0 2px 0 rgba(0, 0, 0, 0.12);
+}
+section .info .plus
+{
+    margin-top:140px;
+    color: #fff;
+    font-size: 32px;    
+    text-transform: capitalize;
+}
+section .info p
+{
+    font-size: 21px;
+    font-weight: 500;
+    color: #47a0ff;
+}
+section .info img
+{
+    margin-top: 15px;
+}
+section .banner-img img
+{
+    background-color:#1a5ca3;
+}
+ .coup
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: #708aa5;
+    margin-top: 50px;
+    margin-left: 125px;
+}
+.sec
+{
+/* height: 200px; */
+/* width: 100%; */
+/* background-color: gray; */
+display: flex;
+flex-wrap: wrap;
+column-gap: 20px;
+
+padding: 20px 80px;
+}
+.sec .ad1
+{
+    /* height: 200px; */
+    width: 49%;
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+    /* margin: auto; */
+    /* background-color: coral; */
+}
+.sec .ad2 
+{
+    /* height: 200px; */
+    width: 49%;
+    /* margin-right:103px; */
+    /* margin: auto; */
+    /* background-color: lightblue; */
+}
+.ad1 img
+{
+    object-fit: contain;
+    /* margin-left: 165px; */
+}
+.ad2 img
+{
+    object-fit: contain;
+    /* margin-left: -165px; */
+}
+.Explore
+{
+    /* height: 400px; */
+    /* background-color: gray; */
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    /* background-color: red; */
+}
+.exp
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: #708aa5;
+    margin-left: 75px;
+}
+.mai
+{
+    padding: 50px 0px;
+    display: flex;
+}
+ .Explore .mai .ourmenu
+{
+    height: 300px;
+    width: 25%;
+    background-color: orange;
+}
+.Explore .mai .nearby
+{
+    height: 300px;
+    width: 25%;
+    background-color: green;
+}
+ .Explore .mai .birthday
+{
+    height: 300px;
+    width: 25%;
+    background-color: red;
+}
+ .Explore .mai .catering
+{
+    height: 300px;
+    width: 25%;
+    background-color: blue;
+}
+.Explore
+{
+    height: 350px;
+    /* background-color: lightblue; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding: 0px 55px;
+}
+.exp 
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: #708aa5;
+    margin-left: 125px;
+}
+.Explore .ourmenu
+{
+    /* height:350px; */
+    /* background-color: orange; */
+    width: 25%;
+    /* margin-top: 25px; */
+    /* margin-left: 85px; */ 
+}
+.Explore .nearby
+{
+    /* height: 350px; */
+    /* background-color: red; */
+    width: 25%;
+    /* position: relative; */
+}
+.Explore .birthday
+{
+    /* height: 350px; */
+    /* background-color: green; */
+    width: 25%;
+    
+}
+.Explore .catering
+{
+    /* height: 350px; */
+    /* background-color: pink;  */
+    width: 25%;
+}
+.ourmenu .menu
+{
+    height: 280px;
+    width: 320px;
+    /* background-color: gray; */
+    margin: 50px auto;
+}
+.ourmenu .menu .up 
+{
+    height: 80%;
+    background-color: whitesmoke;   
+    /* border-bottom:2px dashed rgba(255, 255, 255, 0.32);
+    border: 2px dashed rgba(255, 255, 255, 0.32);
+    border-right:2px solid rgba(255, 255, 255, 0.32); */
+    border: 1px dashed gray;
+
+}
+.ourmenu .menu .down
+{
+    height: 20%;
+    background-color: whitesmoke;
+    /* border: 2px dashed rgba(255, 255, 255, 0.32);
+    border-right:2px solid rgba(255, 255, 255, 0.32); */
+    border: 1px dashed gray;
+}
+.ourmenu .menu .up img
+{
+    margin-left: 145px;
+    margin-top: 30px;
+}
+.imgourmenu
+{
+    margin-left: 110px;
+    margin-top: 15px;
+    color: #2b4547;
+}
+.delpizza
+{
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #2b4547;
+    margin-top: 10px;
+}
+.down span
+{
+    font-family: "proximaExtraBold";
+    font-size: 15px;
+    letter-spacing: 0.31;
+    color: #de042e;
+    margin-left: 100px;
+    line-height: 55px;
+    font-weight: bold;
+}
+.nearby .menu1
+{
+    height: 280px;
+    width: 320px;
+    /* background-color: red; */
+    margin: 50px auto;
+}.nearby .menu1 .up
+{
+    height: 80%;
+    background-color: whitesmoke;
+    /* border-bottom:2px dashed rgba(255, 255, 255, 0.32);
+    border: 2px dashed rgba(255, 255, 255, 0.32);
+    border-right:2px solid rgba(255, 255, 255, 0.32); */
+    border: 1px dashed gray;
+}
+.nearby .menu1 .down
+{
+    height: 20%;    
+    background-color: whitesmoke;
+    /* border-bottom:2px dashed rgba(255, 255, 255, 0.32);
+    border: 2px dashed rgba(255, 255, 255, 0.32);
+    border-right:2px solid rgba(255, 255, 255, 0.32); */
+    border: 1px dashed gray;
+
+}
+.menu1 .up img 
+{
+    margin-top: 30px;
+    margin-left: 125px;
+}
+.menu1 .up .nearbystore
+{
+    margin-top: 10px;
+    margin-left: 85px;
+    color: #2b4547;
+}
+.menu1 .up .fadp
+{
+    text-align: center;
+    margin-top: 15px;
+    color: #2b4547;
+}
+.menu1 .down .dominosstore
+{
+    font-family: "proximaExtraBold";
+    font-size: 15px;
+    letter-spacing: 0.31;
+    color: #de042e;
+    margin-left: 70px;
+    line-height: 55px;
+    font-weight: bold;
+}
+.birthday .menu2
+{
+    height: 280px;
+    width: 320px;
+    background-color: lightblue;
+    margin: 50px auto;
+    border: 1px dashed gray;
+    /* position: absolute;
+    left: 46.5%; */
+}
+.birthday .menu2 .up
+{
+    height: 80%;
+    background-color: whitesmoke;
+}
+.birthday .menu2 .down
+{
+    height: 20%;
+    background-color: whitesmoke;
+    border: 1px dashed gray;
+
+}
+.menu2 .up img
+{
+    margin-top: 15px;
+    margin-left: 135px;
+}
+.menu2 .up .birthdaypartytext
+{
+    margin-top: 10px;
+    margin-left: 80px;
+    color: #2b4547;
+}
+.menu2 .up .celerate
+{
+    margin-top: 15px;
+    text-align: center;
+    color: #2b4547;
+}
+.menu2 .down .booknow
+{
+    margin-left: 120px; 
+}
+.catering .menu3
+{
+    height: 280px;
+    width: 320px;
+    background-color: whitesmoke;
+    margin: 50px auto;
+    border: 1px dashed gray;
+}
+.catering .menu3 .up
+{
+    height: 80%;
+    background-color: whitesmoke;
+    border: 1px dashed gray;
+}
+.catering .menu3 .down
+{
+    height: 20%;
+    border: 1px dashed gray;
+    /* background-color: lightseagreen; */
+}
+.menu3 .up img
+{
+    margin-top: 45px;
+    margin-left: 125px;
+}
+.menu3 .up .cateringtext
+{
+    margin-left: 115px;
+    color: #2b4547;
+}
+.menu3 .up .livedominos
+{
+    margin-top: 15px;
+    text-align: center;
+    color: #2b4547;
+
+}
+.menu3 .down .booknow1
+{
+    margin-left: 120px;
+}
+.maindiv
+{
+    height: auto;
+    margin-top: 50px;
+    background-color: #f2f5fc;
+    display: flex;
+    flex-wrap: wrap;
+}
+.maindiv .leftimg 
+{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: lightcoral; */
+}
+.maindiv .rightimg
+{
+    width: 40%;
+    /* background-color: orange; */
+}
+.maindiv .leftimg img 
+{
+    margin-left: auto;
+    width: 80%;
+}
+.maindiv .rightimg .unlockoffer
+{
+    color: #59688c;
+    text-transform: none;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 70px;
+}
+.forlighting
+{
+    font-size: 27px;
+    line-height: 43px;
+    letter-spacing: 0.24px;
+    color: #8899c0;
+    margin-left: 85px;
+    margin-top: 25px;
+    /* text-align: center; */
+}
+/* .rightimg img 
+{
+    margin-top: 40px;
+    margin-left:85px;
+} */
+.rightimg ul li 
+{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 85px;
+}
+.paragraph
+{
+    height: 1200px;
+    /* background-color: gray; */
+    margin-top: 35px;
+}
+.paragraph .dominospizza
+{
+    color: #006491;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 35px;
+    /* line-height: 100px; */
+}
+.paragraph .whatbetterthen
+{
+    color: #54565b;
+    margin-left: 37px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;   
+}
+.paragraph .havingthatcrispy
+{
+    color: #54565b;
+    margin-left: 37px;
+    font-size: 16px;
+    line-height: 56px;
+    font-weight: 400;
+}
+.paragraph .withdominositisalways
+{
+    color: #54565b;
+    margin-left: 37px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+.paragraph .thereissomething
+{
+    color: #54565b;
+    margin-left: 37px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+.paragraph .morechoicemorefun
+{
+    color: #006491;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 35px;
+    /* line-height: 100px;    */
+}
+.paragraph .Nomatterwhat
+{
+    color: #54565b;
+    margin-left: 37px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+.paragraph .pixxaresturant
+{
+    color: #54565b;
+    margin-left: 37px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+.paragraph .thirtyminutedelivery
+{
+    color: #006491;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 35px;
+    /* line-height: 100px; */
+}
+.paragraph .icingonthecake
+{
+    color: #54565b;
+    margin-left: 37px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+.paragraph .sostop
+{
+    color: #54565b;
+    margin-left: 37px;
+    font-size: 16px;
+    line-height: 46px;
+    font-weight: 400;
+}
+.paragraph .franchiseinformation
+{
+    color: #006491;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 35px;
+    line-height: 100px;   
+}
+.paragraph .jubilantfoodworks
+{
+    color: #54565b;
+    margin-left: 37px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;    
+}
+.paragraph .wehavecome
+{
+    color: #54565b;
+    margin-left: 37px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+.paragraph .neiterjf
+{
+    color: #54565b;
+    margin-left: 37px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+.menuall 
+{
+    height: auto;
+    /* background-color: orange; */
+}
+.menuall .menu
+{
+    border-style: groove;
+    background-color: #f3ecec;
+    border-radius: 6px;
+    padding: 4px;
+    display: inline-block;
+    margin: 10px;
+    margin-left: 25px;
+}
+.menuall .vegpizza
+{
+    border-style: groove;
+    background-color: #f3ecec;
+    border-radius: 6px;
+    padding: 4px;
+    display: inline-block;
+    margin: 2px;
+}
+.menuall .chickenpizza
+{
+    border-style: groove;
+    background-color: #f3ecec;
+    border-radius: 6px;
+    padding: 4px;
+    display: inline-block;
+    margin: 2px;
+}
+.menuall .pasta
+{
+    border-style: groove;
+    background-color: #f3ecec;
+    border-radius: 6px;
+    padding: 4px;
+    display: inline-block;
+    margin: 2px;
+}
+.menuall .pizzacrust
+{
+    border-style: groove;
+    background-color: #f3ecec;
+    border-radius: 6px;
+    padding: 4px;
+    display: inline-block;
+    margin: 2px;
+}
+.menuall .Bevregeres
+{
+    border-style: groove;
+    background-color: #f3ecec;
+    border-radius: 6px;
+    padding: 4px;
+    display: inline-block;
+    margin: 2px;
+}
+.menuall .PizzaMania
+{
+    border-style: groove;
+    background-color: #f3ecec;
+    border-radius: 6px;
+    padding: 4px;
+    display: inline-block;
+    margin: 2px;
+}
+.menuall .Burgerpizza
+{
+    border-style: groove;
+    background-color: #f3ecec;
+    border-radius: 6px;
+    padding: 4px;
+    display: inline-block;
+    margin: 2px;
+}
+.menuall .FarmHousePizza
+{
+    border-style: groove;
+    background-color: #f3ecec;
+    border-radius: 6px;
+    padding: 4px;
+    display: inline-block;
+    margin: 2px;
+}
+.menuall .vegmargeritapizza
+{
+    border-style: groove;
+    background-color: #f3ecec;
+    border-radius: 6px;
+    padding: 4px;
+    display: inline-block;
+    margin: 2px;
+}
+.menuall .cheesecornpizza
+{
+    border-style: groove;
+    background-color: #f3ecec;
+    border-radius: 6px;
+    padding: 4px;
+    display: inline-block;
+    margin: 2px;
+}
+.menuall .doublechessemargeritapizza
+{
+    border-style: groove;
+    background-color: #f3ecec;
+    border-radius: 6px;
+    padding: 4px;
+    display: inline-block;
+    margin: 2px;
+}
+.menuall .PannerMakhaniPizza
+{
+    border-style: groove;
+    background-color: #f3ecec;
+    border-radius: 6px;
+    padding: 4px;
+    display: inline-block;
+    margin: 2px;
+}
+.menuall .ChocoLavaCake
+{
+    border-style: groove;
+    background-color: #f3ecec;
+    border-radius: 6px;
+    padding: 4px;
+    display: inline-block;
+    margin: 2px;
+}
+.menuall .RoastedChockenWingsPeriPeri
+{
+    border-style: groove;
+    background-color: #f3ecec;
+    border-radius: 6px;
+    padding: 4px;
+    display: inline-block;
+    margin: 2px;
+}
+.menuall .garlicbread
+{
+    border-style: groove;
+    background-color: #f3ecec;
+    border-radius: 6px;
+    padding: 4px;
+    display: inline-block;
+    margin: 2px;
+}
+.menuall .Stuffedgarlicbread
+{
+    border-style: groove;
+    background-color: #f3ecec;
+    border-radius: 6px;
+    padding: 4px;
+    display: inline-block;
+    margin: 2px;    
+}
+.menuall .pannerzingiparcel
+{
+    border-style: groove;
+    background-color: #f3ecec;
+    border-radius: 6px;
+    padding: 4px;
+    display: inline-block;
+    margin: 2px;  
+}
+.menuall .freshpanpizza
+{
+    border-style: groove;
+    background-color: #f3ecec;
+    border-radius: 6px;
+    padding: 4px;
+    display: inline-block;
+    margin: 10px;  
+}
+.menuall .newhandtoastedpizza
+{
+    border-style: groove;
+    background-color: #f3ecec;
+    border-radius: 6px;
+    padding: 4px;
+    display: inline-block;
+    margin: 2px;  
+}
+.menuall .classichandtoastedpizza
+{
+    border-style: groove;
+    background-color: #f3ecec;
+    border-radius: 6px;
+    padding: 4px;
+    display: inline-block;
+    margin: 2px;  
+}
+.menuall .goldenhandpizza
+{
+    border-style: groove;
+    background-color: #f3ecec;
+    border-radius: 6px;
+    padding: 4px;
+    display: inline-block;
+    margin: 2px;  
+}
+.menuall .extrachessepizza
+{
+    border-style: groove;
+    background-color: #f3ecec;
+    border-radius: 6px;
+    padding: 4px;
+    display: inline-block;
+    margin: 2px;  
+}
+.menuall .wednesdayoffer
+{
+    border-style: groove;
+    background-color: #f3ecec;
+    border-radius: 6px;
+    padding: 4px;
+    display: inline-block;
+    margin: 2px;  
+}
+.about
+{
+    /* height: 700px; */
+    display: flex;
+    flex-wrap: wrap;    
+    background-color: #222e3a;
+}
+.about .aMenu
+{
+    width: 16.66%;
+    padding-top: 75px;
+    /* padding-left: 60px; */
+    text-align: center;
+    font-size: 25px;
+    /* background-color: orange; */
+    color: #546273;
+    /* border: 2px solid; */
+}
+.about .aMenu ul li
+{
+ text-decoration: none;
+ list-style: none;
+ padding: 12px 0px;
+}
+.aMenu ul li a
+{
+    color: #fff;
+    font-weight: 100;
+}
+.about .Company
+{
+    /* padding-top: 75px;
+    padding-left: 125px;
+    font-size: 25px;
+    color: #546273; */
+    width: 16.66%;
+    margin-top: 75px;
+    text-align: center;
+    /* margin-left: 20px; */
+    font-size: 25px;
+    color: #546273;
+    /* border: 2px solid; */
+}
+.about .Company ul li
+{
+    text-decoration: none;
+    list-style: none;
+    padding: 12px 0px;   
+}
+.about .Company ul li a
+{
+    color: #fff;
+    font-weight: 100;
+}
+.about .pizzaresturant
+{
+    width: 16.66%;
+    margin:75px 0px;
+    /* border: 2px solid; */
+    /* background-color: lightblue; */
+    text-align: center;
+    font-size: 25px;
+    color: #546273;
+}
+.about .pizzaresturant ul li
+{
+    text-decoration: none;
+    list-style: none;
+    padding: 12px 0px;
+}
+.about .pizzaresturant ul li a
+{
+    color: #fff;
+    font-weight: 100;
+}
+.about .aabout
+{
+    width: 16.66%;
+    text-align: center;
+    margin-top: 75px;
+    /* margin-left: 18px; */
+    font-size: 25px;
+    color: #546273;
+    /* border: 2px solid; */
+}
+.about .aabout ul li
+{
+    text-decoration: none;
+    list-style: none;
+    padding: 12px 0px;
+}
+.about .aabout ul li a
+{
+    color: #fff;
+    font-weight: 100;    
+}
+.about .legal
+{
+    /* border: 2px solid; */
+    width: 16.66%;
+    margin: 75px 0px;
+    text-align: center;
+    /* margin-left: -23px; */
+    font-size: 25px;
+    color: #546273;
+}
+.about .legal ul li
+{
+    text-decoration: none;
+    list-style: none;
+    padding: 12px 0px;
+}
+.about .legal ul li a
+{
+    color: #fff;
+    font-weight: 100;  
+}
+.about .socialmedia 
+{
+    width: 16.66%;
+    margin-top: 75px;
+    text-align: center;
+    /* margin-left:35px; */
+    font-size: 25px;
+    color: #546273;
+    /* border: 2px solid; */
+}
+.about .socialmedia ul li
+{
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    padding: 12px 0px;
+
+}
+.about .socialmedia img 
+{
+    padding:20px;
+}
+
+.copyright
+{
+    display: flex;
+    justify-content: center;
+    padding: 1.4em;
+    background: #1a2735;
+    color: #5c6f83;
+    border-top: 1px dotted #526274;
+}

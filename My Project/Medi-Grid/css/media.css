@@ -1,0 +1,370 @@
+@media(max-width:500px)
+{
+    .bluenav
+    {
+        padding: 125px 125px;
+    }
+    .bluenav .blue
+    {
+        grid-template-columns: auto;
+        margin-left: 0px;
+    }
+    .bluenav .blue .freeshipping 
+    {
+        width: 100%;
+       
+    }
+    .freeshipping img
+    {
+        margin-left: 0px;
+    }
+    .bluenav .blue .freeshipping h3 
+    {
+        margin-left: 60px;
+        margin-top: -40px;
+    }
+    .bluenav .blue .freeshipping p
+    {
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+    .navbar 
+    {
+        grid-template-columns: 1fr;
+    }
+    .Nav .navbar .b
+    {
+        display: none;
+    }
+    .Nav .navbar .c
+    {
+        display: none;
+    }
+    .imgd 
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 6fr;
+        /* height: auto; */
+        /* background: blue; */
+        /* border: 2px solid; */
+    }
+    .imgd img 
+    {
+     height: 250px;
+     width: 100%;
+    }
+    .left{
+        height: 150px;
+        width: 350px;
+        top: 20%;
+        left: 15%;
+    }
+    .left .medici{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .left h3{
+        font-size: 20px;
+    }
+    .left p{
+        font-size: 10px;
+    }
+    .left button{
+        margin: 10px 80px;
+        padding: 0px 50px;
+    }
+    .about 
+    {
+        width: 100%;   
+        background: green;
+        background: rde;
+        left: 50%;
+        top: 280px;
+        transform: translate(-50%);
+    }
+    .aboutmedici
+    {
+        /* height: auto; */
+        width: 100%;
+    }
+    .abouttext
+    {
+    /* height: auto; */
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    }
+    .about .clip
+    {
+        display: none;
+    }
+    .feature 
+    {
+        margin-top: 105px;
+        grid-template-columns: 500px;
+        grid-template-areas:
+        " header"
+        "nav"
+        "card1" 
+        "card2" 
+        "card3" 
+        "card4"
+        "card5"
+        "card6" 
+        "card7" 
+        "card8";
+    }
+    .nav 
+    {
+    background: blueviolet;
+    /* padding: 40px 550px; */
+    position: relative;
+    left: -600px;
+    }
+    .nav ul 
+    {
+    display: flex;
+    width: 100%;
+    background: orange;
+    /* margin-left: 15px; */
+    }
+    .nav .top 
+    {
+    height: 1px;
+    width: 450px;
+    position: absolute;
+    top: 35%;
+    left: 565px;
+    margin: 0px auto;
+    background: #ececec;
+    margin-top: -10px;
+    }
+    .nav .a
+    {
+    height: 1px;
+    width: 450px;
+    position: absolute;
+    top: 85%;
+    left: 565px;
+    margin: 0px auto;
+    background: #ececec;
+    margin-top: -10px;
+    }
+    .feature .header
+    {
+        margin-left: -400px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .feature .header span 
+    {
+        font-size: 22px;
+        font-weight: normal;
+    }
+    .feature .header .subtitle
+    {
+        text-align: center;
+        margin-left: 350px;
+    }
+    .feature .header .line
+    {
+    height: 1px;
+    width: 150px;
+    background: #eee;
+    background: rebeccapurple;
+    position: absolute;
+    top: 65%;
+    left: -110px;
+    }
+    .feature .header .line1
+    {
+    height: 1px;
+    width: 150px;
+    background: #eee;
+    background: rebeccapurple;
+    position: absolute;
+    top: 65%;
+    left: 130px;
+    }
+    .feature .header .a
+    {
+    height: 1px;
+    width: 100px;
+    background: #eee;
+    background: rebeccapurple;
+    position: absolute;
+    top: 70%;
+    left: -60px;
+    }
+    .feature .header .b
+    {
+    height: 1px;
+    width: 100px;
+    background: #eee;
+    background: rebeccapurple;
+    position: absolute;
+    top: 70%;
+    left: 130px;
+    }
+    .feature .header .clip
+    {
+    height: 40px;
+    width: 40px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background: #4baabc;
+    position: absolute;
+    top: 68%;
+    left: 69%;
+    z-index: 3;
+    }
+    .new 
+    {
+     display: block;
+     color: #fff;
+     background: #333;
+     font-size: 14px;
+     position: absolute;
+     top: 30px;
+     left: 115px;
+     line-height: 27px;
+     height: 27px;
+     min-width: 55px;
+     padding: 0 8px;
+     z-index: 3;
+     text-align: center;
+     text-transform: uppercase;
+    }
+    .sale 
+    {
+        left: 66%;
+    }
+    .ourgoal 
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+    }
+    .ourgoal p
+    {
+        display: none;
+    }
+    .ourgoal #paitents
+    {
+        display: none;
+    }
+    .ourgoal button
+    {
+        display: none;
+    }
+    .header img 
+    {
+    margin-left: 0px;
+    margin-top: 25px;
+    }
+    .testimonials .threecard .c1
+    {
+        display: none;
+    }
+    .testimonials .threecard .c2
+    {
+        background: #4baabc;
+        width: 400px;
+        margin-left: -60px;
+    }
+    .newarrivals 
+    {
+        grid-template-columns: 1fr;
+    }
+    .latest .section .three
+    {
+        grid-template-columns: 1fr;
+        width: 200%;
+        height: auto;
+        margin-left: -100px;
+    } 
+    .latest .header span 
+    {
+        position: relative;
+        left: 0%;
+    }
+    .newletters .news
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    } 
+    .newletters .news .part h4
+    {
+        margin-left: 0px;
+    } 
+    .newletters .news .part p
+    {
+        margin-left: 60px;
+    } 
+    .newletters .news .part input
+    {
+        margin-top: 30px;
+        margin-left: 80px;
+        width: 300px;
+    } 
+    .newletters .news .part button 
+    {
+        margin-left: 125px;
+        margin-top: 25px;
+    }
+    .footer .medici 
+    {
+        grid-template-columns: 1fr;
+    }
+    .footer .ico .facebook
+    {
+    margin-left: 100px;
+    margin-top: -50px;
+    }
+    .footer .ico .twitter
+    {
+    margin-left: 160px;
+    }
+    .footer .ico .pinterest
+    {
+      margin-left: 220px;
+    }
+    .footer .ico .instragram
+    {
+    margin-left: 280px;
+    }
+    .footer .ico .last li
+    {
+        margin-top: 25px;
+        margin-left: -150px;
+        margin-right: 30px;
+    }
+    .footer .ico .final 
+    {
+        grid-template-columns: 1fr;
+    }
+    .footer .ico .final .part p
+    {
+        margin-left: 100px;
+    } 
+    .footer .ico .final .part img
+    {
+        margin-left: 100px;
+    } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}  
+    

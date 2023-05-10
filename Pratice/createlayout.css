@@ -1,0 +1,37 @@
+.card{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.02);
+    width: 200px;
+    height: 200px;
+    transition: 0.3s;
+}
+.card:hover{
+box-shadow: 0px 18px 16px rgba(0, 0, 0, 0.02);
+}
+.container{
+padding: 2px 16px ;
+}
+.anchor{
+text-decoration: none;
+color: black;
+border: 2.5px solid black;
+}
+.card1{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.02);
+    width: 200px;
+    height: 200px;
+    transition: 0.3s;
+    display: inline-block;
+    margin-top: 120px;
+    
+}
+.card1:hover{
+box-shadow: 0px 18px 16px rgba(0, 0, 0, 0.02);
+}
+.container1{
+padding: 2px 16px ;
+}
+.anchor1{
+text-decoration: none;
+color: black;
+border: 2.5px solid black;
+}

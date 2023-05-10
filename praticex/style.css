@@ -1,0 +1,555 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+.banner
+{
+    width: 100%;
+    height: 300vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.navbar
+{
+    width: 65%;
+    /* margin: auto; */
+    /* border: 1px solid; */
+    margin-left:95px;
+    padding: 25px 0px;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-twitter 
+{
+color: #9dedde;
+margin-top: 20px;
+margin-left: 25px;
+animation: tests 2s linear infinite;
+}
+@keyframes tests
+{
+    from
+    {
+        text-shadow: 0px 0px 10px lightblue,0px 0px 15px lightblue,0px 0px 20px lightblue;
+    }
+    to
+    {
+        text-shadow: 0px 0px 15px orange,0px 0px 20px orange;
+
+    }
+}
+.fa-instagram
+{
+color: #9dedde;
+margin-top: 20px;
+margin-left: 245px;
+animation: tests1 2s linear infinite;
+}
+a{
+    text-decoration: none;
+}
+@keyframes tests1
+{
+    from
+    {
+        text-shadow: 0px 0px 10px lightblue,0px 0px 15px lightblue,0px 0px 20px lightblue;
+    }
+    to
+    {
+        text-shadow: 0px 0px 15px orange,0px 0px 20px orange;
+
+    }
+}
+
+.fa-facebook
+{
+color: #9dedde;
+margin-top: 20px;
+margin-left: 25px;
+animation: tests2 2s linear infinite;
+}
+@keyframes tests2
+{
+    from
+    {
+        text-shadow: 0px 0px 10px lightblue,0px 0px 15px lightblue,0px 0px 20px lightblue;
+    }
+    to
+    {
+        text-shadow: 0px 0px 15px orange,0px 0px 20px orange;
+
+    }
+}
+h1
+{
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    font-family: 'Source Serif Pro', serif;
+    /* animation: texts 2s linear infinite; */
+}
+strong
+{
+    color: #5ce1e6;
+}
+.port
+{
+    color: #5ce1e6;
+    font-family: 'sono';
+    letter-spacing: 3px;
+    animation: texts 2s linear infinite;   
+}
+@keyframes texts
+{
+    from
+    {
+        /* -webkit-text-stroke: 2px;
+        -webkit-text-stroke-color: lightblue; */
+        text-shadow: 0px 0px 15px lightblue;
+    }
+    to
+    {
+        /* -webkit-text-stroke: 2.2px;
+        -webkit-text-stroke-color: orange; */
+        text-shadow: 0px 0px 25px orange;
+    }
+}
+.dest 
+{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    float:right;
+    top: 0;
+    margin-right: 200px;
+    margin-top:15px;
+    background-color: gray transparent;
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+    transition: .2s;
+    transform-style: preserve-3d;
+}
+.first 
+        {
+            height: 50px;
+            width: 50px;
+            background-color: lightcoral transparent;
+            transform: translateZ(25px);
+            backface-visibility: hidden;
+            color: white;
+            
+        }
+        .second
+        {
+            height: 50px;
+            width: 50px;
+            background-color: lightblue;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotateX(90deg) translateZ(25px);
+            transition: 1s;
+        }
+        .dest:hover
+        {
+            transform: rotateX(-90deg) ;
+            transition: 1s;
+        }
+    
+.logo
+{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+    position: relative;
+
+}
+.navbar ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after
+{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    right: 0;
+    top:150%;
+    bottom: 0;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after
+{
+    width: 100%;
+}
+.content
+{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+
+}
+.content h1
+{
+    font-size: 70px;
+    margin-top: 80px;
+    /* text-transform:uppercase; */
+}
+.content p
+{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+
+}
+button
+{
+    width: 200px;
+    padding: 15px 0px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    
+}
+span
+{
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span
+{
+     width: 100%;
+}
+button:hover
+{
+    border: none;
+}
+.form
+{
+    height: 500px;
+    width: 350px;
+    background-color: orange transparent;
+    background: transparent;
+    background: url(asfalt-light.png);
+    border: 2px solid rgba(166,170,173,255);
+    border-radius: 20px;
+    margin: auto;
+    position: absolute;
+    top: 180%;
+    left: 39%;
+    background-origin: border-box;
+    transition: 1s;
+}
+.form:hover
+{
+    border:2px outset lightblue;
+    text-shadow: 0px 0px 10px lightblue,0px 0px 15px lightblue,0px 0px 20px lightblue,0px 0px 25px lightblue;
+    box-shadow: 0px 0px 15px lightblue;
+    border:2px double lightblue
+}
+h3
+{
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-family: 'Source Serif Pro', serif;
+
+}
+input[type="text"]
+{
+    width: 60%;
+    background-color: orange transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+input[type="text"]::placeholder
+{
+    padding: 8px;
+}
+input[type="email"]::placeholder
+{
+    padding: 8px;
+}
+input[type="email"]
+{
+    width: 60%;
+    background-color: orange transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+textarea::placeholder
+{
+    padding: 8px;
+}
+input[type="submit"]
+{
+    width: 30%;
+    border-radius: 20px;
+    background-color:  #5ce1e6;
+    border: none;
+    color: #000;
+    letter-spacing: 2px;
+    font-family: 'Roboto Slab';
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    margin-left: -10px;
+}
+input[type="reset"]
+{
+    width: 30%;
+    border-radius: 20px;
+    background-color:  #5ce1e6;
+    border: none;
+    color: #000;
+    letter-spacing: 2px;
+    font-family: 'Roboto Slab';
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    margin-left: 30px;
+}
+textarea
+{
+    border-radius: 5px;
+}
+input:hover
+{
+    color: #009688;
+}
+textarea:hover
+{
+    color: #009688;
+}
+h4
+{
+    font-size: 17px;
+    letter-spacing: 4px;
+    font-family: 'Source Serif Pro', serif;
+    font-family: 'Rajdhani';
+    color: #5ce1e6;
+    position: absolute;
+    top: 13%;
+    left: 45%;
+}
+.content1
+{
+    height: 20%;
+    width: 60%;
+    background-color: gray transparent;
+    position: relative;
+    top: 70%;
+    left: 20%;
+    display: grid;
+    border-radius: 25px;
+    /* border: 2px solid white;  */
+    /* padding: 10px; */
+    padding-top: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    transition: 1s;
+    
+}
+.content1:hover
+{
+    box-shadow: 0px 0px 15px lightblue;
+    border: 2px inset lightblue;
+}
+.content1:hover
+{
+    border:2px double lightblue;
+}
+.skills
+{
+    position: absolute;
+    top: -20%;
+    left: 45%;
+    letter-spacing: 5px;
+    transition: 2s;
+}
+.skills:hover
+{
+    text-shadow: 0px 0px 10px lightblue,0px 0px 15px lightblue,0px 0px 20px lightblue;
+}
+.x
+{
+    /* border: 2px solid; */
+    display: grid;
+    grid-template-rows: 80% 20%;
+    position: relative;
+}
+img
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 70%;
+    width: 80%;
+    padding: 20px;
+    padding: 10px 20px 0px 15px;
+    
+}
+img:hover
+{
+    /* box-shadow: 0px 0px 20px lightblue; */
+    border-radius: 20px;
+    transform: scale(1.2);
+    /* -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: lightblue; */
+}
+
+.y1
+{
+    /* border: 2px solid; */
+}
+.htm
+{
+    position: absolute;
+    top: 83%;
+    left: 35%;
+    color: #fff;
+    letter-spacing: 4px;
+    transition: 2s;
+}
+.htm:hover
+{
+    text-shadow: 0px 0px 10px lightblue,0px 0px 15px lightblue,0px 0px 20px lightblue;
+}
+.htm1
+{
+    position: absolute;
+    top: 83%;
+    left: 23%;
+    color: white;
+    letter-spacing: 4px;
+    transition: 2s;
+}
+.htm1:hover
+{
+    text-shadow: 0px 0px 10px lightblue,0px 0px 15px lightblue,0px 0px 20px lightblue;
+
+}
+.htm2
+{
+    position: absolute;
+    top: 83%;
+    left: 30%;
+    color: #fff;
+    letter-spacing: 4px;
+    transition: 2s;
+}
+.htm2:hover
+{
+    text-shadow: 0px 0px 10px lightblue,0px 0px 15px lightblue,0px 0px 20px lightblue;
+}
+.htm3
+{
+    position: absolute;
+    top: 83%;
+    left: 40%;
+    color: #fff;
+    letter-spacing: 4px;
+    transition: 2s;
+}
+.htm3:hover
+{
+    text-shadow: 0px 0px 10px lightblue,0px 0px 15px lightblue,0px 0px 20px lightblue;
+}
+.htm4
+{
+    position: absolute;
+    top: 83%;
+    left: 33%;
+    color: #fff;
+    letter-spacing: 4px;
+    transition: 2s;
+}
+.htm4:hover
+{
+    text-shadow: 0px 0px 10px lightblue,0px 0px 15px lightblue,0px 0px 20px lightblue;
+}
+.htm5
+{
+    position: absolute;
+    top: 83%;
+    left: 41%;
+    color: #fff;
+    letter-spacing: 4px;
+    transition: 2s;
+}
+.htm5:hover
+{
+    text-shadow: 0px 0px 10px lightblue,0px 0px 15px lightblue,0px 0px 20px lightblue;
+}
+.htm6
+{
+    position: absolute;
+    top: 83%;
+    left: 45%;
+    color: #fff;
+    letter-spacing: 4px;
+    transition: 2s;
+}
+.htm6:hover
+{
+    text-shadow: 0px 0px 10px lightblue,0px 0px 15px lightblue,0px 0px 20px lightblue;
+}
+.thank
+{
+    position: absolute;
+    top: 290%;
+    left: 35%;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 3px;
+    font-family: 'Playfair Display';
+    font-family: cursive;
+    transition: 2s;
+    animation: play 2s linear infinite;
+}
+@keyframes play
+{
+    from{
+        text-shadow: 0px 0px 10px orange,0px 0px 15px orange,0px 0px 20px orange;
+        transform: scale(1);
+    }
+    to{
+        text-shadow: 0px 0px 10px lightblue,0px 0px 15px lightblue,0px 0px 20px lightblue;
+        transform: scale(1.3);
+    }
+}

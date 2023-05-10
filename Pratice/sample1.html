@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body
+        {
+            
+            background: linear-gradient(orange,green);
+            background-attachment: fixeds;
+        }
+        .main
+        {
+            height: 200px;
+            width: 200px;
+            background: whitesmoke;
+            border-radius: 100px;
+            margin: 250px auto;   
+            animation: Round 2s linear infinite ;
+            position: relative;
+        }
+        .z
+        {
+            height: 100px;
+            width: 100px;
+            background: wheat;
+            border-radius: 100px;
+            position: absolute;
+            top: 38%;
+            left: 47%;
+
+        }
+        .fa-play
+        {
+            position: absolute;
+            top: 35%;
+            left: 38%;
+        }
+
+        .z:hover
+        {
+            background: #2596be ;
+        }
+        .fa-play:hover 
+        {
+            color: #fff;
+        }
+        @keyframes Round
+        {
+            0%{
+                transform: scale(0);
+            }
+            100%
+            {
+                transform: scale(1);
+            }
+        }   
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+       
+    </div>
+    <div class="z">
+        <i class="fa fa-play fa-2x" aria-hidden="true"></i>
+    </div>
+</body>
+</html>

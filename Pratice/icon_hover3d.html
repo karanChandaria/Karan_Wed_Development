@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <style>
+        a
+        {
+            height: 50px;
+            width: 50px;
+            display: inline-block;
+            background-color: gray;
+            position: relative;
+            text-align: center;
+            line-height: 50px;
+            transition: .2s;
+            transform-style: preserve-3d;
+        }
+        .first
+        {
+            height: 50px;
+            width: 50px;
+            background-color: lightcoral;
+            transform: translateZ(25px);
+            backface-visibility: hidden;
+        }
+        .second
+        {
+            height: 50px;
+            width: 50px;
+            background-color: lightblue;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotateX(90deg) translateZ(25px);
+            transition: 1s;
+        }
+
+        a:hover
+        {
+            transform: rotateX(-90deg) ;
+            transition: 1s;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <a href="">
+
+        <div class="first">
+            <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        <div class="second">
+            <i class="fa-brands fa-facebook-f"></i>
+        </div>
+
+
+
+
+    </a>
+</body>
+</html>

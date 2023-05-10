@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .main
+        {
+            height: 50px;
+            width: 550px;
+            background: lightblue;
+            margin-left:450px ;
+        }
+        ul
+        {
+            margin: 0;
+            padding: 0;
+        }
+        li
+        {
+            display: inline-block;
+            padding: 10px;
+            margin-left: 50px;
+            position: relative;
+        }
+        a
+        {
+            text-decoration: n;
+            font-size: 25px;
+        }
+        .x
+        {
+            height: 2px;
+            width: 0px;
+            background: #000;
+            position: absolute;
+             top: 75%;
+            left: 0;
+        }
+        li:hover .x
+        {
+            
+            width: 100%;
+        }
+        .fa-angle-down
+        {
+            position: absolute;
+            top: 35%;
+            left: 90%;
+            /* animation: arrow 1s infinite linear; */
+            transition: 1s;
+            transform: rotateX(0deg);
+        }
+        .home:hover i
+        {
+            transform: rotateX(180deg);
+        }
+        @keyframes arrow
+        {
+            0%{
+                transform: rotateX(0deg);
+            }
+            100%{
+                transform: rotateX(180deg);
+            }
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <ul >
+            <li class="home">Home
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+
+                <a href=""></a>
+                <div class="x"></div>
+            </li>
+            <li class="home">About
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <a href=""></a>
+                <div class="x"></div>
+            </li>
+            <li class="home">Contact
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <a href=""></a>
+                <div class="x"></div>
+            </li>
+            <li class="home"    >Review
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <a href=""></a>
+                <div class="x"></div>
+            </li>
+
+
+
+
+        </ul>
+
+
+
+
+
+    </div>
+</body>
+</html>

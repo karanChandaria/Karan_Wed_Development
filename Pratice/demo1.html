@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+            height: 300px;
+            width: 450px;
+            background: url(./art.jpeg);
+            margin: 150px auto;
+            background-size: 100% 100%;
+            position: relative;
+            overflow: hidden;
+            
+            
+        }
+        .x
+        {
+            height: 50px;
+            width: 50px;
+            background-color: rgba(8, 8, 8, 0.432);
+            margin-top: 200px;
+            box-sizing: border-box;
+            position: absolute;
+            top:35%;
+            left:0%;
+            transform: scale(1);
+            transition: 0.5s;
+            
+        }
+        .main:hover .x
+        {
+            transform: scale(17);
+            
+            
+          
+        }
+        .y
+        {
+            height: 50px;
+            width: 50px;
+            background-color: rgba(8, 8, 8, 0.432);
+            margin-left: 400px;
+            margin-top: -50px;
+            transform: scale(1);
+            transition: 0.5s;
+            
+        }
+        .main:hover .y
+        {
+            transform: scale(17);
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="x"> </div>
+        <div class="y"></div>
+</div>
+</body>
+</html>

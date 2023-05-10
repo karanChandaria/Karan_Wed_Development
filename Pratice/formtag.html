@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="shinchan.html" method="get">
+      Name:
+      <input
+        type="text"
+        required
+        placeholder="Enter Name"
+        pattern="[a-zA-Z]{2,7}"
+        title="Letters Only"
+      />
+      <br /><br />
+      Password: <input type="password" required placeholder="Enter Password" />
+      <br /><br />
+      Mobile Number:
+      <input
+        type="text"
+        required
+        placeholder="Enter Mobile Number"
+        pattern="[0-9]{10}"
+        title="10 Digits Only"
+      />
+      <br /><br />
+      Email: <input type="email" required placeholder="Enter Email" />
+      <br /><br />
+      Address:
+      <textarea
+        cols="30"
+        rows="3"
+        required
+        placeholder="Enter Address"
+      ></textarea>
+      <br /><br />
+      Country:
+      <select>
+        <!-- <option disabled>Select the Country</option> -->
+        <option hidden>---Select the Country---</option>
+        <option>India</option>
+        <option>USA</option>
+        <option>Japan</option>
+        <option>Korea</option>
+      </select>
+      <br /><br />
+      Gender: <input type="radio" name="gender" />Male
+      <input type="radio" name="gender" />Female
+      <input type="radio" name="gender" />LGBTQ <br /><br />
+      Date: <input type="date" /> <br /><br />
+      Datetime: <input type="datetime-local" /> <br /><br />
+      Color: <input type="color" /> <br /><br />
+      File: <input type="file" required /> <br /><br />
+      <button type="submit" value="Submit">Submit</button>
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>

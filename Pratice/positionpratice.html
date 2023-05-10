@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+            height: 50px;
+            width: 200px;
+            background-color: lawngreen transparent;
+            margin: 150px auto;
+            position: relative;
+            overflow: hidden;
+            /* border: 2px inset darkorange; */
+            box-shadow: 0px 0px 15px orange;
+            border-radius: 50px;
+        }
+        .effect
+        {
+            height: 50px;
+            width: 200px;
+            background-color: aqua ;
+            /* margin: 150px auto; */
+            position: absolute;
+            top: 0;
+            left: -200px;
+            transition: 1s;
+
+        }
+        .main:hover .effect
+        {
+            left: 200px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">Demo
+        <div class="effect"></div>
+
+
+    </div>
+</body>
+</html>

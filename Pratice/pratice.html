@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background: linear-gradient(to right,blue,pink);
+            height: 100vh;
+        }
+        .main
+        {
+            height: 550px;
+            width: 550px;
+            background-color: black;
+            margin: 150px auto;
+            position: relative;
+            transform: rotate(0deg);
+            transition: 0.7s;
+            overflow: hidden;
+        
+            
+        }
+       
+        .main::after{
+            content: "";
+            height: 790px;
+            width: 790px;
+            background: linear-gradient(red,blue,green,orange,aqua);
+            position: absolute;
+            top: -23%;
+            left: -22%;
+
+        }
+           .main:hover::after    
+        {
+            transform: rotate(360deg);
+            transition: 0.6s;
+        }  
+        .round
+        {
+            height: 500px;
+            width: 500px;
+            background-color: black;
+            position: absolute;
+            /* background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj4VspRwDSXtyJ5T-9PjRPufoBkJxP_vu_Og&usqp=CAU); */
+            top: 5%;
+            left: 5%;
+            z-index: 111;
+            background-repeat: no-repeat;
+            background-size: cover
+                
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="round"></div>
+    </div>
+</body>
+</html>

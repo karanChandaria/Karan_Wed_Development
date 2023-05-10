@@ -193,7 +193,25 @@ the number of rows a cell should span.
   </tr>
 </table>
 
-10.How to create a Hyperlink in HTML?
+10.What is the difference between a block-level element and an inline element?
+
+=>
+In HTML, elements can be categorized into two types: block-level elements and inline elements. The main differences between them are:
+
+Box Model: Block-level elements form a rectangular block on the webpage, which means they take up the full width of the parent container
+ by default, whereas inline elements only take up the necessary width to display their content. This is because block-level elements are subject
+ to the box model, which allows them to have padding, margin, and borders, while inline elements do not have the box model applied to them.
+
+Line Breaks: Block-level elements create a new line after them, which means any content after the block-level element will start on a new line. 
+Inline elements do not create a new line after them.
+
+Nesting: Block-level elements cannot be nested inside inline elements, but they can be nested inside other block-level elements. Inline elements,
+ on the other hand, can be nested inside block-level elements or other inline elements.
+
+Examples of block-level elements include <div>, <h1>-<h6>, <p>, and <ul>, while examples of inline elements include <span>, <a>, <img>, and <strong>.
+
+
+11.How to create a Hyperlink in HTML?
 
 =>
 To create a hyperlink in HTML, you can use the <a> tag, which stands for anchor. Here is the basic syntax of the <a> tag:
@@ -212,7 +230,7 @@ You can also add additional attributes to the <a> tag to control the behavior an
 
 <a href="https://www.google.com/" target="_blank">Go to Google in a new tab</a>
 
-11.What is the use of an iframe tag?
+12.What is the use of an iframe tag?
 
 =>he <iframe> tag in HTML stands for inline frame. It is used to embed another HTML document or web page within the current 
 HTML document. The content displayed within the <iframe> is essentially a separate web page, but it is displayed within the current
@@ -225,7 +243,7 @@ The src attribute specifies the URL of the document or page that you want to emb
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
 
 
-12.What is the use of a span tag? Explain with example?
+13.What is the use of a span tag? Explain with example?
 
 =>The <span> tag in HTML is used to group inline-elements and apply CSS styles to them. It is a generic inline container that does
  not have any semantic meaning on its own, but it allows you to group and apply styles to a specific section of text or other inline 
@@ -239,7 +257,7 @@ he <span> tag can also be used in combination with JavaScript or other scripting
 Overall, the <span> tag is a versatile and powerful tool for styling and manipulating inline content within a web page, and it allows you
  to apply a wide range of visual effects and interactive behaviors to your content.
 
-13.How to insert a picture into a background image of a web page?
+14.How to insert a picture into a background image of a web page?
 
 =>First, you need to create a container element, such as a <div> tag, that will contain the background image and the picture.
 
@@ -260,7 +278,7 @@ Finally, you can insert the picture into the container element using an <img> ta
   <img src="path/to/picture.jpg" alt="Picture">
 </div>
 
-14.How are active links different from normal links?
+15.How are active links different from normal links?
 
 =>
 Active links and normal links are two different states that a hyperlink can have, based on the user's interaction with it.
@@ -289,7 +307,7 @@ a:active {
   text-decoration: none;
 }
 
-15.What are the different tags to separate sections of text? 
+16.What are the different tags to separate sections of text? 
 
 =>
 <p> tag: This tag is used to create paragraphs of text. It is one of the most commonly used tags for separating sections of text.
@@ -312,7 +330,7 @@ commonly used for displaying code or other types of formatted text.
 <div> and <span> tags: These tags are used to create container elements that can be used to group sections of text together
  for styling or other purposes. <div> is typically used for larger sections of text, while <span> is used for smaller sections of text.
 
-16.What is SVG?
+17.What is SVG?
 
 =>
 SVG stands for Scalable Vector Graphics. It is a vector graphics format based on XML that is used to display graphics and images
@@ -325,7 +343,7 @@ created directly in a text editor using SVG markup code.
 SVG images have several advantages over other image formats. Because they are vector-based, they can be scaled up or down 
 without losing quality, making them ideal for creating graphics that need to be displayed at different sizes.
 
-17.What is difference between HTML and XHTML?
+18.What is difference between HTML and XHTML?
 
 =>
 Syntax: The syntax of XHTML is stricter and more standardized than HTML. XHTML requires all tags to be properly nested and closed,
@@ -341,7 +359,7 @@ and guidelines. HTML documents are not required to be well-formed or valid, alth
 MIME type: XHTML documents are served with a different MIME type (application/xhtml+xml) than HTML documents (text/html).
 
 
-18.What are logical and physical tags in HTML? 
+19.What are logical and physical tags in HTML? 
 
 =>
 Logical tags are used to provide meaning to the content of a web page. They describe the function of the content, rather than how it

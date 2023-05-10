@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        .x
+        {
+            height: 400px;
+            width: 300px;
+            background: white;
+            margin: 150px auto;
+            border-radius: 10px;
+        }
+        input
+        {
+            width: 60%;
+            margin: 1px 25px;
+            padding: 5px 34px;
+            border: 1px solid gray;
+            background: url(https://img.icons8.com/material-outlined/24/null/user--v1.png);
+           background-repeat: no-repeat;
+        }
+        input[type="password"]
+        {
+            background: url(https://img.icons8.com/material-outlined/24/null/password.png);
+            background-repeat: no-repeat;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Abel';
+        }
+        a{
+            text-decoration: none;
+            color: lightseagreen;
+            padding: 20px 20px;
+            margin: 10px 6px;
+            
+        }
+       
+        body
+        {
+            background: linear-gradient(to right,rgba(98,183,230,255),rgba(147,35,232,255));
+        }
+        
+       p a{
+        margin-top: -34px;
+        display: block;
+        text-decoration: none;
+        text-align: left;
+        
+       }
+       input[type="button"]{
+        width: 83%;
+        color: white;
+        
+        background: linear-gradient(to right,rgba(98,183,230,255),rgba(147,35,232,255));
+       }
+       .fa-times
+       {
+        text-align: right;
+        margin-left: 270px;
+        margin-top: 10px;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="x">
+        <form action="hexagon-shape.html" method="get">
+            <i class="fa fa-times" aria-hidden="true"></i>
+
+            
+       <h1> Login Form</h1> <br><br>
+            <label for="Email or phone" style="margin: 26px;">Email or phone</label> <br>
+            <input type="email" required  pattern="[0-9]{10}" title="only 10 digits"> <br><br>
+            <label for="password" style="margin: 26px;">Password</label> <br>
+            <input type="password" required >
+            <!-- <h5><a href="https://www.google.com" style="background: linear-gradient(rgba(143,175,219,255));"> Forget Password? </a></h5> -->
+          <p><a href="#" target="_blank"> <small>Forgot Password?</small>  </a></p>
+          <input type="button" value="LOGIN"> <br><br>
+          <p> <a href="http://www.google.com" target="_blank" style="text-align: center;">not a member?Signup now</a></p>
+    </form>
+    </div>
+</body>
+</html>
