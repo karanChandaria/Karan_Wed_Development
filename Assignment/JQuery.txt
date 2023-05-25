@@ -1,0 +1,165 @@
+--------------JQuery---------------
+
+1.What is jQuery?
+
+Ans= jQuery is a fast, lightweight, and feature-rich JavaScript library that simplifies client-side scripting of HTML.
+ It was created to make it easier to navigate and manipulate HTML documents, handle events, create animations,
+ and make asynchronous requests to the server using JavaScript.
+
+With jQuery, developers can write concise and efficient JavaScript code that works across different web browsers. 
+It provides a set of functions and methods that abstracts away the complexities of browser inconsistencies and provides
+ a unified interface for interacting with HTML elements.
+
+Some key features of jQuery include:
+
+DOM manipulation: jQuery provides a wide range of methods to select and manipulate HTML elements on a web
+ page. You can easily traverse and modify the DOM structure, change styles, add or remove elements, and handle
+ events.
+
+Event handling: jQuery simplifies event handling by providing methods to bind event handlers to HTML elements.
+ You can easily respond to user interactions such as clicks, mouse movements, and keyboard input.
+
+AJAX support: jQuery simplifies making asynchronous HTTP requests to the server using its AJAX module. 
+You can easily retrieve data from a server, send data, or update parts of a web page without requiring a full 
+page reload.
+
+Animation and effects: jQuery includes built-in animation and effects methods that allow you to create 
+smooth transitions, fade in/out elements, slide elements, and perform other visual effects with ease.
+
+Plugins and extensibility: jQuery has a vast ecosystem of plugins and extensions created by the community. 
+These plugins provide additional functionality and allow you to extend jQuery's capabilities for various purposes,
+ such as form validation, image sliders, and more. 
+
+
+2.How to Apply CSS Using JQuery, How to Add Class and Remove Class in
+Jquery, JQuery Animation?
+
+Ans= // Apply CSS to an element with id "myElement"
+$("#myElement").css("color", "red");
+
+// Apply multiple CSS properties at once
+$("#myElement").css({
+  "color": "red",
+  "font-size": "16px",
+  "background-color": "yellow"
+});
+
+In the above code, $("#myElement") selects the element with the ID "myElement", and .css() is used to apply CSS 
+properties to that element. You can pass a single property-value pair as arguments, or you can pass an object with 
+multiple properties and values.
+
+// Fade in an element with id "myElement"
+$("#myElement").fadeIn();
+
+// Slide up an element with id "myElement"
+$("#myElement").slideUp();
+
+
+
+
+3.How to create slider with animation?
+
+Ans= <div class="slider">
+  <div class="slider-content">
+    <img src="image1.jpg" alt="Image 1">
+    <img src="image2.jpg" alt="Image 2">
+    <img src="image3.jpg" alt="Image 3">
+  </div>
+</div>
+
+
+CSS 
+
+.slider {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.slider-content {
+  width: 1500px; /* Total width of all slider images */
+  height: 100%;
+  display: flex;
+}
+
+.slider-content img {
+  width: 500px;
+  height: 300px;
+}
+
+
+Javascript
+
+$(document).ready(function() {
+  var sliderWidth = $('.slider').width();
+  var slideCount = $('.slider-content img').length;
+  var currentPosition = 0;
+  
+  function slide() {
+    $('.slider-content').animate({ left: -currentPosition * sliderWidth }, 500);
+  }
+  
+  function nextSlide() {
+    if (currentPosition < slideCount - 1) {
+      currentPosition++;
+    } else {
+      currentPosition = 0;
+    }
+    slide();
+  }
+  
+  function prevSlide() {
+    if (currentPosition > 0) {
+      currentPosition--;
+    } else {
+      currentPosition = slideCount - 1;
+    }
+    slide();
+  }
+  
+  $('.next-button').click(function() {
+    nextSlide();
+  });
+  
+  $('.prev-button').click(function() {
+    prevSlide();
+  });
+});
+
+
+
+
+4.Event bubbling tickling example
+
+Ans = 
+HTML
+
+<div id="outer">
+  <div id="middle">
+    <div id="inner">
+      Click me!
+    </div>
+  </div>
+</div>
+
+Javascript 
+$(document).ready(function() {
+  $("#inner").click(function(event) {
+    console.log("Inner clicked!");
+    event.stopPropagation();
+  });
+
+  $("#middle").click(function() {
+    console.log("Middle clicked!");
+  });
+
+  $("#outer").click(function() {
+    console.log("Outer clicked!");
+  });
+});
+
+Inner clicked!
+Middle clicked!
+Outer clicked!
+
+
