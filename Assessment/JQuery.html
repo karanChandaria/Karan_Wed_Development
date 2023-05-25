@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="submit"]
+        {
+            background: greenyellow;
+            color: #fff;
+            outline: none;
+            border: none;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        Full Name: <input type="text" placeholder="Enter First Name"> <br><br>
+        Last Name: <input type="text" id="lastname" placeholder="Enter Last Name"> <br><br>
+        Email: <input type="text" placeholder="it should contain @"> <br><br>
+        Mobile: <input type="text" placeholder="only 10 digits are allowed"> <br><br>
+        Gender: <input type="radio" name="Male">Male
+        <input type="radio" name="Female">Female <br><br>
+        Date of Birth: <textarea placeholder="mm/dd/yyyy"  cols="30" rows="1"></textarea> <br><br>
+        Address: <textarea name="" id="" cols="30" rows="10"></textarea> <br><br>
+        City: <input type="text"> <br><br>
+        Area PIN: <input type="text"> <br><br>
+        State: <input type="text"> <br><br>
+        Qualifaction: <select name="" id="">
+            <option hidden>Select qualifaction</option>
+        </select>
+         <br><br> 
+        Specialzation: <input type="checkbox" >Computer Science <br><br>
+        <input type="checkbox" >Information Technology <br><br>
+        <input type="checkbox">Computer Technology <br><br>
+        <input type="checkbox">Tele Communication <br><br>
+        Password: <input type="text"> <br><br>
+        <input type="submit" value="Registered">
+    </form>
+    <script>
+        last = document.getElementById('lastname');
+        alert("please enter your last name");
+    </script>
+</body>
+</html>
