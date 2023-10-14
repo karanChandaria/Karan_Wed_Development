@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main
+{
+    background: #003b95;
+    height:400px;
+}
+
+.header {
+    /* background: #003b95; */
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.nevbar img {
+    vertical-align: middle;
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.nevbar .logo {
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.text {
+    display: flex;
+    justify-content: center;
+}
+.text h4 {
+    margin-left: 30px;
+}
+
+.text button {
+    padding: 10px;
+    color: #006ce4;
+    font-size: 13px;
+    margin-left: 10px;
+    border: 1px solid #006ce4;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+svg {
+    fill: white;
+}
+.hedar-bootam {
+    width: 67%;
+    /* width: 50%; */
+    margin: auto;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.hedar-bootam ul li {
+    list-style: none;
+}
+
+.stays .icon {
+    border: 2px solid white;
+    background-color: #003b95;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.stays .icon:hover
+{
+    filter: grayscale(50%);
+}
+
+.Flights .icon {
+    border: none;
+    background-color: #003b95;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.Flights .icon:hover
+{
+    filter: grayscale(50%);
+}
+.ul-text
+{
+    display: block;
+}
+.stays .icon {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.Flights button {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.ul-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+/* ---------------------------------------------------------- */
+/* Find your Next Stay Start  */
+ .Findyourhome 
+{
+    height: auto;
+    width: 40%;
+    margin:0px 250px; 
+} 
+.Findyourhome .head-content 
+{
+    text-align: center;
+    font-size: 45px;
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Findyourhome p 
+{
+    font-size: 24px;
+    line-height: 50px;
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Find your Next Stay End  */
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+/* Calender Start  */
+/* ------------------------------------------------------------- */
+.sidualBar
+{
+    width: 65%;
+    background-color: #ffb700;
+    border-radius: 5px;
+    padding: 3px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 47%;
+    left: 17%;
+}
+
+.sidualBar .serchBar
+{
+    width: 40%;
+    padding: 15px 15px 15px;
+    border: 2px solid  #ffb700;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+}
+
+.serchBar input
+{
+    height: 100%;
+    width: 100%;
+    border:none;
+    border-radius: 5px;
+    outline: none;
+    vertical-align: middle;
+}
+
+.serchBar input:focus
+{
+    border: 1.5px solid #006CE4;
+}
+
+.serchBar input::placeholder
+{
+    font-size: 15px;
+    color: black;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.sidualBar .serchBtn
+{
+    width: 9%;
+}
+
+.serchBtn button
+{
+    height: 100%;
+    width: 100%;
+    background-color: #006CE4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 18px;
+}
+
+.serchBtn button:hover
+{
+    background-color: #003B95;
+}
+
+.inpSvg
+{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 32%;
+    left: 5%;
+}
+/* Calender End  */
+/* ------------------------------------------------------------- */
+/* Section Start  */
+.home-map
+{
+    height: auto;
+    width: 100%;
+    display: flex;
+    background: green;
+    justify-content: space-between;
+    padding: 20px 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.home-map .left-ul
+{
+    height: 200px;
+    width: 100%;
+    background: lightblue;
+    margin-left: 280px;
+}
+.left-ul ul li 
+{
+    display: inline;
+    margin-left: 10px;
+}
+/* Section End  */
+/* JSON API Start  */
+
+/* JSON API End  */
+/* Card SEction Start  */
+.card
+{
+    height: auto;
+    width: 50%;
+    display: flex;
+    margin: auto;
+    border: 1px solid gray;
+    /* background: orange; */
+}
+.card-left-img 
+{
+    flex: 0.8;
+    padding: 10px;
+    /* background: lightblue; */
+}
+.card-left-img img 
+{
+    border-radius: 10px;
+}
+.card-right-content 
+{
+    flex: 2;
+    /* background: lightcoral; */
+}
+.content-top
+{
+    display: flex;
+    /* border: 1px solid #000; */
+}
+.content-top-left
+{
+    flex: 1;
+    /* border: 1px solid #000; */
+}
+.content-top-right
+{
+    flex-direction: 0.3;
+    padding: 10px;
+    /* border: 1px solid #000; */
+}
+.content-top-right .eightone
+{
+    height: 20px;
+    width: 20px;
+    padding: 8px;
+    background: lightblue;
+}
+/* Card Section End  */
