@@ -1,0 +1,102 @@
+[
+  {
+      "id": 1,
+      "img_url": "https://picsum.photos/id/111/200/300",
+      "title": "This is a long and unique title for item 1",
+      "sub-title":"Anjuna Beach,Anjuna . Show on map",
+      "Sustainable":"🍃🍃🍃 Travel Sustainable Level 3",
+      "reviews":"Very Good",
+      "num-reviews":"2,219 reviews",
+      "description": "Located in Anjuna, a few steps from Anjuna Beach, Zulu Land cottages - near Curlies beach shack and shiva valley - Anjuna beach provides accommodations with a fitness center, free private parking, a..."
+  },
+  {
+      "id": 2,
+      "img_url": "https://picsum.photos/id/112/200/300",
+      "sub-title":"Calangute . Show on map",
+      "title": "A unique and lengthy title for item 2 with more details",
+      "Sustainable":"🍃🍃🍃 Travel Sustainable Level 3",
+      "reviews":"Wonderful",
+      "num-reviews":"385 reviews",
+      "description": "Located 4.8 miles from Chapora Fort, Mojigao offers a garden, a terrace and air-conditioned accommodations with a balcony and free Wifi."
+  },
+  {
+      "id": 3,
+      "img_url": "https://picsum.photos/id/113/200/300",
+      "title": "Item 3 with an extended and distinct title for variety",
+      "sub-title":"Aguada . Show on map",
+      "reviews":"Exceptional",
+      "num-reviews":"3 reviews",
+      "description": "Located in Aguada, a 17-minute walk from Candolim Beach, The Golden Wings Resort, Goa provides accommodations with a garden, free private parking and a restaurant."
+  },
+  {
+      "id": 4,
+      "img_url": "https://picsum.photos/id/114/200/300",
+      "title": "A long and different title for item 4 to make it stand out",
+      "sub-title":"Saligoa . Show on map",
+      "Sustainable":"🍃🍃🍃 Travel Sustainable Level 2",
+      "reviews":"Wonderful",
+      "num-reviews":"11 reviews",
+      "description": "Located in Aguada, a 17-minute walk from Candolim Beach, The Four season cottage By GR has accommodations with a garden, free private parking, a terrace and a restaurant."
+  },
+  {
+      "id": 5,
+      "img_url": "https://picsum.photos/id/115/200/300",
+      "title": "Title for item 5 that is both unique and lengthy",
+      "sub-title":"Porvorim . Show on map",
+      "Sustainable":"🍃🍃🍃 Travel Sustainable Level 1",
+      "reviews":"Wonderful",
+      "num-reviews":"132 reviews",
+      "description": "Located just 2.5 mi from the Morjim Beach and Vagator, Siolim Suites is a self-catering accommodations located in Siolim. Free WiFi access is available."
+  },
+  {
+      "id": 6,
+      "img_url": "https://picsum.photos/id/116/200/300",
+      "title": "A distinct and extended title for item 6 to differentiate",
+      "sub-title":"Mandrem . Show on map",
+      "Sustainable":"🍃🍃🍃 Travel Sustainable Level 1",
+      "reviews":"Very Good",
+      "num-reviews":"220 reviews",
+      "description": "Located in Mandrem, a 16-minute walk from Mandrem Beach, La Vera Boutique Hotel has accommodations with an outdoor swimming pool, free private parking, a terrace and a restaurant."
+  },
+  {
+      "id": 7,
+      "img_url": "https://picsum.photos/id/117/200/300",
+      "title": "This is item 7 with a long and unique title",
+      "sub-title":"Candolim . Show on map",
+      "Sustainable":"🍃🍃🍃 Travel Sustainable Level 2",
+      "reviews":"Excellent",
+      "num-reviews":"78 reviews",
+      "description": "Located in Curtorim, 5.3 miles from Margao Train Station, Nirvana Hill Resort provides accommodations with free bikes, free private parking, an outdoor swimming pool and a garden."
+  },
+  {
+      "id": 8,
+      "img_url": "https://picsum.photos/id/118/200/300",
+      "title": "A different and lengthy title for item 8 for diversity",
+      "sub-title":"Aguada . Show on map",
+      "Sustainable":"🍃🍃🍃 Travel Sustainable Level 1",
+      "reviews":"Excellent",
+      "num-reviews":"481 reviews",
+      "description": "Located in Calangute, a 15-minute walk from Calangute Beach, Sea Sapphire has accommodations with a terrace, free private parking and a restaurant."
+  },
+  {
+      "id": 9,
+      "img_url": "https://picsum.photos/id/119/200/300",
+      "title": "A unique and extended title for item 9 to set it apart",
+      "sub-title":"Chicalim . Show on map",
+      "Sustainable":"🍃🍃🍃 Travel Sustainable Level 2",
+      "reviews":"Very Good",
+      "num-reviews":"111 reviews",
+      "description": "Located in Porvorim, 9.1 miles from Chapora Fort, Porvorim Regency Goa Hotel by BSG Absolute provides accommodations with an outdoor swimming pool, free private parking, a terrace and a restaurant.",
+      "image":"./images"
+  },
+  {
+      "id": 10,
+      "img_url": "https://picsum.photos/id/120/200/300",
+      "title": "An extended and distinct title for item 10 to make it special",
+      "sub-title":"Aguada . Show on map",
+      "Sustainable":"🍃🍃🍃 Travel Sustainable Level 3",
+      "reviews":"Very Good",
+      "num-reviews":"10 reviews",
+      "description": "Arize You Home has garden views, free Wifi and free private parking, located in Verla, 3.6 miles from Chapora Fort."
+  }
+]

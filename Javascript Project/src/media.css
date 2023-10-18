@@ -1,0 +1,299 @@
+@media (max-width:1604px)
+{
+    .sidualBar
+    {
+        width: 65%;
+        background-color: #ffb700;
+        border-radius: 5px;
+        padding: 3px;
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        top: 47.30%;
+        left: 17%;
+    }
+}
+@media (max-width:1600px)
+{
+    .sidualBar
+    {
+        width: 65%;
+        background-color: #ffb700;
+        border-radius: 5px;
+        padding: 3px;
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        top: 50%;
+        top: 47%;
+        left: 17%;
+    }
+}
+@media (max-width:1595px)
+{
+    .sidualBar
+    {
+        width: 65%;
+        background-color: #ffb700;
+        border-radius: 5px;
+        padding: 3px;
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        top: 56.55%;
+        left: 17%;
+    }
+}
+@media (max-width:1591px)
+{
+    .sidualBar
+    {
+        width: 65%;
+        background-color: #ffb700;
+        border-radius: 5px;
+        padding: 3px;
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        top: 56.55%;
+        left: 17%;
+    }
+}
+@media (max-width:1590px)
+{
+    .sidualBar 
+    {
+        position: absolute;
+        top: 47.30%;
+    }
+}
+@media (max-width:1126px)
+{
+    .Findyourhome 
+    {
+        height: auto;
+        width: 40%;
+        margin:-50px 250px; 
+    } 
+}
+@media (max-width:991px)
+{
+    .Findyourhome 
+    {
+        height: auto;
+        width: 40%;
+        margin:-50px 250px; 
+    } 
+}
+@media (max-width:977px)
+{
+    .box-model1 .left-side-yellow   
+    {
+    width: 35%;
+    background: green;
+    }
+}
+@media (max-width:935px)
+{
+    .box-model1 .left-side-yellow   
+    {
+    width: 35%;
+    background: green;
+    }
+}
+@media (max-width:897px)
+{
+    .box-model1 .left-side-yellow   
+    {
+    width: 35%;
+    background: green;
+    }
+}
+@media (max-width:870px)
+{
+    .box-model1 .left-side-yellow   
+    {
+    width: 35%;
+    background: green;
+    }
+}
+@media (max-width:804px)
+{
+    .box-model1 .left-side-yellow 
+    {
+        width: 40%;
+    }
+    .box-model1 .right-side-photo 
+    {
+        width: 60%;
+    }
+}
+@media (max-width:788px)
+{
+    .nevbar img {
+        display: none;
+    }
+    
+    .nevbar .logo {
+        display: none;
+    }
+    .hedar-bootam {
+        display: none;
+    }
+    .text h4 {
+        margin-left: 30px;
+        display: none;
+    }
+    .text span 
+    {
+        display: none;
+    }
+    .serchBtn button
+    {
+        height: 100%;
+        width: 100%;
+        background-color: #006CE4;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.2s;
+        font-size: 1.1lvw;
+    }  
+}
+@media (max-width: 768px) {
+    .card {
+        flex-direction: row;
+        /* height: 300px; */
+    }
+    .card-img, .card-content {
+        flex: 2;
+        max-width: 100%;
+    }
+}
+@media (max-width:735px)
+{
+    .box-model1 .left-side-yellow   
+    {
+    width: 50%;
+    background: green;
+    }
+}
+@media (max-width:528px)
+{
+    .Findyourhome 
+    {
+        height: auto;
+        width: 40%;
+        margin:-70px 150px; 
+        /* display: none; */
+    }
+}
+@media (max-width:561px)
+{
+    .Findyourhome 
+    {
+        height: auto;
+        width: 40%;
+        margin:-70px 150px; 
+    }
+}
+@media (max-width:545px)
+{
+    .Findyourhome 
+    {
+        height: auto;
+        width: 60%;
+        margin:-120px 150px; 
+    }
+}
+@media (max-width:547px)
+{
+    .Findyourhome 
+    {
+        height: auto;
+        width: 40%;
+        margin:-70px 150px; 
+    }
+}
+@media (max-width:500px)
+{
+    .nevbar img {
+        display: none;
+    }
+    
+    .nevbar .logo {
+        display: none;
+    }
+    .hedar .logo {
+        height: 30px;
+        width: 30px;
+        text-align: left;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+    .text h4 {
+        margin-left: 30px;
+        display: none;
+    }
+    .text span 
+    {
+        display: none;
+    }
+    .text button {
+        padding: 8px;
+        color: #006ce4;
+        font-size: 13px;
+        margin-left: 10px;
+        border: 1px solid #006ce4;
+        border-radius: 5px;
+        cursor: pointer;
+    } 
+    .hedar-bootam {
+        display: none;
+    }
+    .Findyourhome 
+    {
+        height: auto;
+        width: 40%;
+        margin-left: 70px;
+        /* margin-top: -0px; */
+        /* margin:0px 250px;  */
+    } 
+    .Findyourhome .head-content 
+    {
+        text-align: center;
+        font-size: 3.5lvw;
+        color: #ffffff;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .Findyourhome p 
+    {
+        font-size: 3.5lvw;
+        line-height: 50px;
+        color: #ffffff;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .serchBtn button
+    {
+        height: 100%;
+        width: 100%;
+        background-color: #006CE4;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.2s;
+        font-size: 2lvw;
+    }
+    .box-model1 .left-side-yellow 
+    {
+        width: 60%;
+        background: green;
+    }
+
+    .box-model1 .right-side-photo{
+        width: 40%;
+    }
+    
+}   
